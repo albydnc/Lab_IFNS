@@ -1,0 +1,27 @@
+Digitizer
+ch.0:  FALSE 	 ch.1:  FALSE 	 DC offset 0: 0 	 DC offset 1: 0 	 act ch:  0 	trig mode:  FALSE 	 rise time:  8 	 trig mean:  8 	 trig thr 0:  30 	 trig thr 1:  10 	gate mode:  FALSE 	 gate width:  504 	 pre gate:  0 	 holdoff:  504 	bsln mean:  16 	 bsln thr:  8 	 noflattime:  512 	GPO:  2 	 coinc:  FALSE 	 coinc time:  0 
+PSAU
+ch.0:  TRUE 	 ch.1:  FALSE 	 Vset 0:  55.000000 	 Vset 1:  71.000000 	 Gain0:  28 	 Gain1:  32 	 comp0:  FALSE 	 comp1:  FALSE 	 thr0:  -7.000000 	 thr1:  -15.000000 	 width0:  110 	 width1:  110 	 DOUT0:  TRUE 	 DOUT1:  FALSE 	 outputlevel:  TTL 	 coinc:  FALSE 	 coinc time:  20 
+
+Vmon 0:  54.869999 	 Vmon 1:  0.000000 	 Temp 0:  25.799999 	 Temp 1:  20.299999 	 Temp board:  28.000000 
+day&time: 13Feb19150228
+
+4.000	62770.000
+6.000	61822.500
+8.000	62857.500
+10.000	62645.000
+12.000	24725.000
+14.000	2280.000
+16.000	1905.000
+18.000	1352.500
+20.000	860.000
+22.000	730.000
+24.000	247.500
+26.000	47.500
+28.000	22.500
+30.000	47.500
+32.000	27.500
+34.000	5.000
+36.000	2.500
+38.000	5.000
+40.000	0.000
