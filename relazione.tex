@@ -1,0 +1,261 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[italian]{babel} 
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1.2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{Scintillatori e Raggi Cosmici}\chead{}\rhead{C.d.L. in Fisica}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Scintillatori e Raggi Cosmici}
+\author{Michael Maguire, Leonardo Misuraca Giordano, Daniele Pani, Alberto Perro}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+\newpage
+\section*{Prefazione}
+L'esperienza è volta allo studio e alla caratterizzazione delle tecnologie di scintillatori per la rivelazione di radiazione ionizzante, in particolare di raggi cosmici. Tramite l'uso di due differenti apparati, si è misurato il flusso di muoni sulla superficie terrestre e le caratteristiche di assorbimento dell'edificio, mentre con un banco di test si è studiata la curva di risposta di un SiPM.
+\section{Misure con la postazione fissa}
+\subsection{Caratterizzazione dell'apparato rivelatore}
+Si accende l'alimentazione ad alta tensione e si verifica la forma d'onda in uscita dal fotomoltiplicatore di ogni scintillatore sull'oscilloscopio. Si misura con i cursori l'ampiezza del segnale per impostare la tensione di lavoro, mentre si osserva il rumore di fondo per stabilire il threshold.  \\ Dopo aver stabilito questi parametri, viene configurato il sistema per la misura di efficienza. Per fare ciò, si sovrappongono tre scintillatori e si misurano i conteggi in funzione della tensione di lavoro del rivelatore centrale. Una volta definita e graficata la curva di efficienza, si imposta la tensione di lavoro nel punto di miglior rapporto efficienza-tensione e si caratterizza la risposta in funzione del threshold. \\Il procedimento viene ripetuto per i due modelli di scintillatore forniti.\\
+(N,H,I: XP2262;M: XP2232)\\
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=400px]{img/conn_3.png}
+\caption{Schema delle connessioni elettriche per la caratterizzazione di H.}
+\label{fig:con_3}
+\end{center}
+\end{figure}\\
+I segnali logici NIM dei vari moduli sono stati impostati in modo di avere una durata di circa 25 ns. Le misure di tensione sono state effettuate con il multimetro Meterman 35XP, con un errore di $0.5\%+1dgt$. Le misure di tempo sono state prese con il timer del modulo scaler, su un intervallo di $120.000\;s$ con un errore di 1 ms; l'errore sui conteggi è stato calcolato come la radice quadrata della misura.\\ 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=350px]{img/table_H.png}
+\caption{Misure per la curva di efficienza di H.}
+\label{fig:table_H}
+\end{center}
+\end{figure}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=400px]{img/chart_H.pdf}
+\caption{Curva di efficienza di H.}
+\label{fig:chart_H}
+\end{center}
+\end{figure}
+\\La regressione utilizzata è la funzione:
+\begin{equation}
+\epsilon \left( V \right) =\frac{A}{1+e^{\frac{B-V}{C}}}
+\end{equation}
+dove A,B,C sono parametri liberi. Il parametro A distingue il plateau, B è l'ascissa a metà altezza e C indica la pendenza della curva.\\
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+A                               & 0.983                       & 0.007                       &      \\ \hline
+B                               & 1497                        & 4                           & V    \\ \hline
+C                               & 42                          & 2                           & V    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione.}
+\end{table}
+\\La regressione riporta un $\chi ^2$ di 6.677 con 12 gradi di libertà ed un p-value dell'$88\%$; per cui il modello teorico descrive adeguatamente le misure sperimentali.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=350px]{img/thres_H.png}
+\caption{Efficienza di H a diverse tensioni di lavoro.}
+\label{fig:thres_H}
+\end{center}
+\end{figure}
+\\Per questo modello di scintillatore si è scelta una tensione di lavoro di 1645 V e una soglia di 100 mV, in quanto è la configurazione dove il rapporto rumore-efficienza è minimo.\\
+\\Il medesimo lavoro è stato svolto per lo scintillatore M (modello XP2232).
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=350px]{img/table_M.png}
+\caption{Misure per la curva di efficienza di M.}
+\label{fig:table_M}
+\end{center}
+\end{figure}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=400px]{img/chart_M.pdf}
+\caption{Curva di efficienza di M.}
+\label{fig:chart_M}
+\end{center}
+\end{figure}
+\\La regressione utilizzata è la funzione (1). 
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+A                               & 0.976                       & 0.005                       &      \\ \hline
+B                               & 1423                        & 4                           & V    \\ \hline
+C                               & 36                          & 2                           & V    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione.}
+\end{table}
+\\La regressione riporta un $\chi ^2$ di 14.23 con 11 gradi di libertà ed un p-value dell'$22\%$; per cui il modello teorico descrive adeguatamente le misure sperimentali.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=350px]{img/thres_M.png}
+\caption{Efficienza di M a diverse tensioni di lavoro.}
+\label{fig:thres_H}
+\end{center}
+\end{figure}
+\\Per questo modello di scintillatore si è scelta una tensione di lavoro di 1551 V e una soglia di 100 mV, in quanto è la configurazione dove il rapporto rumore-efficienza è minimo.\\
+Per i due scintillatori I e N di tipo XP2262 (come H) si è effettuata una singola misura alla tensione di lavoro di 1645 V e soglia 100 mV.
+ \begin{figure}[!h]
+\begin{center}
+\includegraphics[width=350px]{img/thres_IN.png}
+\caption{Efficienza di I e N.}
+\label{fig:thres_IN}
+\end{center}
+\end{figure}
+\\Come si può notare, lo scintillatore N non risulta essere all'efficienza massima, per cui si è scelto di effettuare una caratterizzazione completa per trovare il punto di lavoro migliore.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=350px]{img/table_N.png}
+\caption{Misure per la curva di efficienza di N.}
+\label{fig:table_N}
+\end{center}
+\end{figure}
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=400px]{img/chart_N.pdf}
+\caption{Curva di efficienza di N.}
+\label{fig:chart_N}
+\end{center}
+\end{figure}
+\\La regressione utilizzata è la funzione (1). 
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+A                               & 0.984                       & 0.009                       &      \\ \hline
+B                               & 1595                        & 6                           & V    \\ \hline
+C                               & 52                          & 4                           & V    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione.}
+\end{table}
+\\La regressione riporta un $\chi ^2$ di 2.85 con 5 gradi di libertà ed un p-value dell'$72\%$; per cui il modello teorico descrive adeguatamente le misure sperimentali.
+\\Per questo modello di scintillatore si è scelta una tensione di lavoro di 1734 V e una soglia di 100 mV, in quanto è la configurazione dove il rapporto rumore-efficienza è minimo.\\
+\subsection{Curva di coincidenza}
+Per determinare quando due eventi sono coincidenti, si utilizza una porta logica AND. Per capire quali combinazioni di segnali vengono considerati coincidenti, si è effettuata una misura variando lo sfasamento fra i segnali. Per fare ciò, si sono utilizzati i moduli delay impostabili tramite selettori. Il circuito è stato costruito come segue:
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=400px]{img/conn_4.png}
+\caption{Schema delle connessioni elettriche per la misura di coincidenza.}
+\label{fig:con_4}
+\end{center}
+\end{figure}\\
+In questo modo, a coppie di due rivelatori (sopra e sotto), viene operato un OR e ritardato tramite i moduli delay, i segnali in uscita vengono poi valutati tramite un AND e il tutto viene mandato allo scaler. Il delay viene fatto variare a passi di 2 ns da -34 ns a 30 ns e ogni volta il delay viene misurato tramite l'oscilloscopio (con un errore di 0.2 ns). Le misure sono state prese con intervalli di $\left(120.000\pm 0.001\right)\; ns$ tranne per la misura a 2 ns e per quelle inferiori a -27 ns di sfasamento, dove si è scelto un intervallo di $240.000\;s$ per ridurre l'errore relativo dovuto al numero di conteggi ridotto. 
+\newpage
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=350px]{img/table_C.pdf}
+\caption{Misure per la curva di coincidenza.}
+\label{fig:table_C}
+\end{center}
+\end{figure}
+Si sono graficate le misure prese e si sono effettuate tre regressioni: una per la salita, una per il plateau e una per la discesa.
+\begin{equation}
+c_1\left( t \right) =\frac{A}{1+e^{\frac{B-t}{C}}},\;\;\;\;c_2  \left( t \right) = M*t+Q,\;\;\;\;c_3 \left( t \right) =\frac{D}{1+e^{\frac{t-E}{F}}},\;
+\end{equation}
+\newpage
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+A                               & 12.1                       & 0.2                      & $s^{-1}$     \\ \hline
+B                               & 21.1                        & 0.2                           & $\times10^{-9}\;s$    \\ \hline
+C                               & 1.3                          & 0.07                          &  $\times10^{-9}\;s$    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione sulla salita [-30.20,-10.00] ns.}
+\end{table}
+Il modello teorico risulta compatibile con i dati con un p-value del $13\%$, $\chi ^2=5.68$ e 3 gradi di libertà.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+M                               & -0.005                       & 0.007                 & $\times 10^{-9}\;s^{-2}$     \\ \hline
+Q                               & 12.13                      & 0.08                           & $s^{-1}$    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione sul plateau  [-19.00,17.00] ns.}
+\end{table}
+\\Il modello teorico risulta compatibile con i dati con un p-value del $91\%$, $\chi ^2=9.14$ e 16 gradi di libertà.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+D                               & 12.2                       & 0.1                       &    $s^{-1}$  \\ \hline
+E                               & -25.1                       & 0.2                           & $\times10^{-9}\;s$    \\ \hline
+F                               & 1.34                          & 0.07                           & $\times10^{-9}\;s$    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione sulla discesa [13.00,25.00] ns. .}
+\end{table}
+\\Il modello teorico risulta compatibile con i dati con un p-value del $7\%$, $\chi ^2=14.37$ e 8 gradi di libertà.
+\subsection{Rumore di fondo}
+\section{Misure con il dispositivo portatile}
+\subsection{Distribuzione angolare sul tetto dell'edificio}
+\subsection{Coefficiente di assorbimento dell'edificio}
+\section{Testbench SiPM} 
+\subsection{Misura del rumore di fondo}
+\subsection{Misura della distribuzione energetica di una sorgente LED}
+\end{document}

@@ -10,18 +10,18 @@
 #include <iomanip>            // ci serve per manipolare l'output a video
 using namespace std;
 // Corpo del programma. La funzione qui sotto deve avere lo stesso nome del file .C
-void rivM()
+void rivN()
 {
 
   // --------------------------- DATI ------------------------------- //
   // Resistenza della lampadina, misurata in laboratorio con il multimetro
 
   // numero misure prese
-  const int nmisure = 14;
-  float V[]  = {1246,1315,1358,1425,1451,1472,1506,1537,1559,1601,1666,1581,1642,1625}; // V
-  int H[]  = {18,120,282,847,1175,1543,2225,3419,4850,7580,13642,5877,10640,17847}; // mA
-  int NM[] = {255,261,260,251,242,268,243,231,275,259,248,246,278,504};
-  int NHM[] = {1,17,43,118,154,202,213,215,266,249,236,242,268,488};
+  const int nmisure = 8;
+  float V[]  = {1402,1462,1531,1603,1652,1734,1794,1840}; // V
+  int H[]  = {56,127,413,955,1630,3379,5436,7663}; // mA
+  int NM[] = {277,295,271,283,293,279,275,316};
+  int NHM[] = {9,15,66,146,217,258,263,309};
   float eps[nmisure];
   float seps[nmisure];
   float sV[nmisure];
@@ -59,7 +59,7 @@ void rivM()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("Efficienza di M");
+  giV->SetTitle("Efficienza di N");
   // Titoli degli assi
   giV->GetXaxis()->SetTitle("Tensione HV [V]");
   giV->GetYaxis()->SetTitle("#epsilon");
@@ -69,13 +69,13 @@ void rivM()
   giV->Draw("AP");
 
   cout << "\n\n --- Fit I(V) \n" <<endl;
-  TF1 *funz0 = new TF1("funz0","[0]/(1+exp(([1]-x)/[2]))",1200,1700);
+  TF1 *funz0 = new TF1("funz0","[0]/(1+exp(([1]-x)/[2]))",1400,1850);
   // cambio colore alla linea della funzione in modo da distinguerla dalla polinomiale di ordine 4 quando la andrò a disegnare
   funz0->SetLineStyle(1);
   funz0->SetLineColor(2);
   funz0->SetParameter(0,1);
   funz0->SetParLimits(0,0,1);
-  funz0->SetParameter(1,1500);
+  funz0->SetParameter(1,1700);
   funz0->SetParameter(2,50);
   giV->Fit(funz0,"RM+");
 

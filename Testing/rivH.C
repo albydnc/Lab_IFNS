@@ -59,10 +59,10 @@ void rivH()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("eps(V)");
+  giV->SetTitle("Efficienza di H");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("V [V]");
-  giV->GetYaxis()->SetTitle("eps");
+  giV->GetXaxis()->SetTitle("Tensione HV [V]");
+  giV->GetYaxis()->SetTitle("#epsilon");
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
   // "AP" è molto semplice, gli stiamo chiedendo di disegnare gli assi (A) e i punti (P)
