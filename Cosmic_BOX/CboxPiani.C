@@ -63,10 +63,10 @@ void CboxPiani()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("exp12");
+  giV->SetTitle("Grafico CosmicBox 12.5 cm");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("piano (m)");
-  giV->GetYaxis()->SetTitle("rate(s-1)");
+  giV->GetXaxis()->SetTitle("piano [m]");
+  giV->GetYaxis()->SetTitle("rate [s^{-1}]");
 
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
@@ -86,7 +86,7 @@ void CboxPiani()
 
   cout << "Chi^2:" << funz0->GetChisquare() << ", number of DoF: " << funz0->GetNDF() << " (Probability: " << funz0->GetProb() << ")." << endl;
   cout << "--------------------------------------------------------------------------------------------------------" << endl;
-  //
+  /*
   TCanvas *ciV2 = new TCanvas("cVe","Ve",200,10,600,400);
   // Mi assicuro che la tela sia bianca (0 corrisponde al bianco, per altri colori vedi https://root.cern.ch/doc/master/classTColor.html)
   ciV2->SetFillColor(0);
@@ -114,5 +114,5 @@ void CboxPiani()
 
   cout << "Chi^2:" << funz1->GetChisquare() << ", number of DoF: " << funz1->GetNDF() << " (Probability: " << funz1->GetProb() << ")." << endl;
   cout << "--------------------------------------------------------------------------------------------------------" << endl;
-  //
+  *///
 }

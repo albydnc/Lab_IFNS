@@ -52,10 +52,10 @@ void CboxDeg()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("rate(theta)");
+  giV->SetTitle("Distribuzione Angolare dei Raggi Cosmici");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("theta (deg)");
-  giV->GetYaxis()->SetTitle("rate (s-1)");
+  giV->GetXaxis()->SetTitle("#theta [#circ]");
+  giV->GetYaxis()->SetTitle("Rate [s^{-1}]");
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
   // "AP" è molto semplice, gli stiamo chiedendo di disegnare gli assi (A) e i punti (P)

@@ -14,10 +14,10 @@
 double pi = 3.141592;
 
 void computeAcceptance(unsigned int events = 50000000,
-		       double length = 100,     // in cm
-		       double width = 10,      // in cm
+		       double length = 14.5,     // in cm
+		       double width = 14.5,      // in cm
 		       double gapWidth = 0.,     // in cm (if the scintillators are in two pieces)
-		       double zSpacing = 12.5,   // in cm
+		       double zSpacing = 7,   // in cm
 		       double tiltAngle = 0.)    // in degrees
 {
   // compute cosmic ray acceptance of a two-slab scintillator detector
@@ -117,7 +117,7 @@ void computeAcceptance(unsigned int events = 50000000,
   meanTime /= (double)npassed;   meanTimeSq /= (double)npassed;
    double meanTimeErr = sqrt((meanTimeSq - meanTime*meanTime)/double(npassed));
 
-  std::cout << "ACCEPTANCE = " << std::setprecision(4) << acceptance << " +/- " << std::setprecision(2) << accErr << std::endl;
+  std::cout << "ACCEPTANCE = " << std::setprecision(8) << acceptance << " +/- " << std::setprecision(2) << accErr << std::endl;
 
   std::cout << "mean Time-Of-Flight = (" << std::setprecision(5) << meanTime << " +/- " << std::setprecision(2) << meanTimeErr << ") ns " << endl;
 

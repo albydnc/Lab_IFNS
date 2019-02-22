@@ -29,6 +29,7 @@
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 \usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 \usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{wrapfig}
 % These packages are all incorporated in the memoir class to one degree or another...
 
 %%% HEADERS & FOOTERS
@@ -213,6 +214,13 @@ Si sono graficate le misure prese e si sono effettuate tre regressioni: una per 
 c_1\left( t \right) =\frac{A}{1+e^{\frac{B-t}{C}}},\;\;\;\;c_2  \left( t \right) = M*t+Q,\;\;\;\;c_3 \left( t \right) =\frac{D}{1+e^{\frac{t-E}{F}}},\;
 \end{equation}
 \newpage
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=320px]{img/chart_C.pdf}
+\caption{Curva di coincidenza.}
+\label{fig:coin}
+\end{center}
+\end{figure}
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|c|c|c|l|}
@@ -251,11 +259,177 @@ F                               & 1.34                          & 0.07          
 \caption{Risultati della regressione sulla discesa [13.00,25.00] ns. .}
 \end{table}
 \\Il modello teorico risulta compatibile con i dati con un p-value del $7\%$, $\chi ^2=14.37$ e 8 gradi di libertà.
+Come si può vedere dal grafico in figura \ref{fig:coin}, la curva di coincidenza non è perfettamente centrata in zero. Lo spostamento di circa 5 ns è probabilmente dovuto a ritardi non considerati nell'elettronica di acquisizione o ad un impostazione poco precisa della durata del segnale logico (discriminatore o porte logiche).\\ Il plateau risulta compatibile con una costante ( M compatibile con 0, il test normale riporta un p-value $30\%$). Come si può notare, l'ampiezza del plateau è circa due volte la durata impostata del segnale NIM, come previsto.
 \subsection{Rumore di fondo}
+Mantenendo il setup del paragrafo precedente, si è impostato il delay fra i segnali a $\left(150.0\pm0.2\right)$ ns. In questo modo, si sono misurate le coincidenze completamente casuali durante l'arco notturno di $\left(20h18m\pm2m\right)$. Queste sono state comparate con il rate accidentale, calcolato come $R_{acc} =2 \mu R_{IH}R_{NM}$ dove $\mu = \left(20.0\pm0.2\right) ns$ durata del segnale NIM.\\
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Rate IH                   & Rate NM                & Rate Accidentale & Rate Notturno   \\ \hline
+\multicolumn{1}{|c|}{$\left(82\pm1\right)\; s^{-1}$} & \multicolumn{1}{c|}{$\left(48\pm1\right)\; s^{-1}$}& \multicolumn{1}{|c|}{$\left(159\pm5\right)\times10^{-6}\;s^{-1}$} &\multicolumn{1}{c|}{$\left(821\pm106\right)\times10^{-6}\;s^{-1}$}          \\ \hline
+\end{tabular}
+\end{center}
+\caption{Comparazione Rate Accidentale e Rate Notturno.}
+\end{table}
+\\Come si può notare, il rate notturno risulta molto più grande di quello accidentale e quindi incompatibile (p-value = 0), sebbene sia dello stesso ordine di grandezza. Questo è possibile ricondurlo al fatto che avvengano altri fenomeni di cui non si è presa considerazione, oltre alle coincidenze accidentali.
 \section{Misure con il dispositivo portatile}
 \subsection{Distribuzione angolare sul tetto dell'edificio}
+\begin{wrapfigure}{R}{0.35\textwidth}
+\vspace{-30pt}
+  \begin{center}
+    \includegraphics[width=0.35\textwidth]{img/tetto.jpg}
+  \end{center}
+  \caption{Tetto dell'edificio.}
+\end{wrapfigure}
+Per le misure con il dispositivo portatile,  si è raggiunto il tetto dell'edificio a quota 254 m (slm). Le condizioni meteo durante la giornata della presa dati erano cielo poco nuvolso (visibilità 70 km), inoltre sul tetto non erano presenti ostacoli che potessero influenzare le misurazioni.\\
+Impostata la distanza fra i due scintillatori a $\left(30.0\pm0.1\right)\;cm$ e verificato sul goniometro che l'angolo fosse $\left(0\pm5\right)^{\circ}$, abbiamo iniziato a raccogliere i conteggi su un intervallo di 420 secondi circa. La misura è stata ripetuta per gli angoli $15^{\circ},30^{\circ},45^{\circ},60^{\circ}$.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=280px]{img/CB1.PNG}
+\caption{Misure della distribuzione angolare dei raggi cosmici.}
+\label{fig:CBangle}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=300px]{img/CBdeg.pdf}
+\caption{Distribuzione angolare dei raggi cosmici.}
+\label{fig:CBdeg}
+\end{center}
+\end{figure}
+\\La funzione utilizzata per la regressione dei dati è
+\begin{equation}
+R\left(\theta\right)=R_{0}\,cos\,^{n}\left(\theta\right)
+\end{equation}
+dove $R_0$ è il rate in posizione verticale e $n$ l'esponente del coseno.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+$R_0$                               & 0.51                       & 0.03                       &    $s^{-1}$  \\ \hline
+$n$                               & 2.3                       & 0.4                           &    \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione.}
+\end{table}
+\\Il fit ha dato risutato positivo, con un $\chi ^2 = 0.21$, p-value = 0.98 e 3 gradi di libertà. L'esponente del coseno risulta compatibile con il valore atteso di 2 (p-value = 0.28). 
 \subsection{Coefficiente di assorbimento dell'edificio}
+Per determinare il coefficiente di assorbimento dell'edificio, abbiamo raccolto i conteggi a diversi piani dell'edificio nuovo di fisica fissando la distanza tra gli scintillatori a $\left(12.5\pm0.1\right)\;cm$ e il tempo a circa 300 secondi; eccetto per i conteggi sul tetto per i quali abbiamo mantenuto i dati già acquisiti.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=280px]{img/CB4.PNG}
+\caption{Conteggi e coincidenze raccolte ai vari piani.}
+\label{fig:CBa}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=300px]{img/CBexp.pdf}
+\caption{Grafico di assorbimento dei raggi cosmici.}
+\label{fig:CBexp}
+\end{center}
+\end{figure}
+\\\\ L'altezza dei vari piani è stata determinata tramite la planimetria trasversale dell'edificio, assumendo solamente gli spessori delle solette. La funzione utilizzata per il fit è
+\begin{equation}
+R\left(x\right)=R_{0}\,e\,^{-\alpha x}
+\end{equation}
+dove $R_0$ è il rate ideale e $\alpha$ è il coefficiente di attenuazione.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+$R_0$                               & 1.48                       & 0.06                       &    $s^{-1}$  \\ \hline
+$\alpha$                               & 0.19                       & 0.02                          & $m^{-1}$   \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati della regressione.}
+\end{table}
+\\Quindi si è calcolato il fattore di attenuazione $\eta$ come $R_{-2}/R_{6}$ e come $e^{-\alpha x_{TOT}}$.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{$\eta\;\left(R_{-2}/R_{6}\right)$} & \multicolumn{1}{l|}{$\eta\;\left(e^{-\alpha x_{TOT}}\right)$}  & p-value \\ \hline
+$$ $\left(0.53\pm0.04\right)$                               & $\left(0.495\pm0.002\right)$                      &19\%   \\ \hline
+\end{tabular}
+\end{center}
+\caption{Confronto dei fattori di attenuazione}
+\end{table}
+\\Il calcolo del fattore di attenuazione dà risultati compatibili con entrambi i metodi, benché il risultato ottenuto dalla regressione sia più accurato.
+\subsection{Accettanza}
+Per valutare l'accettanza della postazione fissa, si sono utilizzati i dati presi ai vari piani con l'apparato portatile per determinare se il calcolo fosse compatibile con la simulazione statistica. Nonostante la simulazione assuma che i rivelatori abbiano spessore trascurabile, i risultati risultano compatibili, per cui è appropriato utilizzare il risultato statistico per determinare l'accettanza della postazione fissa. La simulazione Monte Carlo è stata svolta con 50'000'000 interazioni.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=400px]{img/table_ACC.png}
+\caption{Comparazione dell'accettanza teorica e il calcolo sperimentale.}
+\label{fig:ACC}
+\end{center}
+\end{figure}
+\\L'accettanza per la postazione fissa teorica è $G=\left(0.40168\pm0.00007\right)$.
+\subsection*{Risultati finali}
+I risultati dei calcoli e delle misure fatte in precedenza sono utilizzati per determinare il valore atteso di rate e confrontarlo con quello misurato sperimentalmente.
+\begin{equation}
+R_{att}= \eta\,\cdot\,R_{slm}\;,\;\;\;\;\;\;R_{sper}=\frac{R_{mis}-R_{acc}}{\epsilon \,\cdot\,G}
+\end{equation}
 \section{Testbench SiPM} 
 \subsection{Misura del rumore di fondo}
+Utilizzando il kit SiPM della CAEN è stato osservato tramite oscilloscopio il segnale analogico senza sorgente luminosa per individuare la soglia corrispondente al primo, secondo e terzo fotoelettrone. Per tutta l'esperienza la temperatura del SiPM è rimasta stabile a $25^{\circ}$C.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=280px]{img/SIPM01.PNG}
+\caption{Segnale in uscita dal SiPM, si possono vedere chiaramente i livelli relativi ai fotoelettroni emessi.}
+\label{fig:Sipm}
+\end{center}
+\end{figure}
+\newpage
+Si è verificato che, al variare del Gain, il grafico a scalini riportasse frequenze compatibili per i primi tre livelli energetici. Si sono assunti come errori la cifra meno significativa; per le misure di frequenza, sopra i 10 kHz si è assunto un errore dell'1\%, sopra 1 kHz 5\%, 10\% altrimenti.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=280px]{img/tabnoise.png}
+\caption{Misure di frequenza per i primi tre livelli di energia.}
+\label{fig:Sipm}
+\end{center}
+\end{figure}
+\\
+L'Optical Cross Talk ai diversi Gain è costante a circa 3\%,  come da manuale.
 \subsection{Misura della distribuzione energetica di una sorgente LED}
+Rimosso il tappo e connessa la fibra ottica, si sono effettuate due misurazioni dello spettro di fotoelettroni emessi impostando la manopola dell'emettitore LED a 2.5 e 3.3.\\La lunghezza d'onda dei fotoni emessi è di 450 nm.
+Le impostazioni utilizzate per il digitizer sono
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|l|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
+Bias                               &55                       & 1                       & V\\ \hline
+Gain                               & 32                       & 1                          & dB   \\ \hline
+Gate                               & 304                       & 5                       & ns \\ \hline
+Pre-Gate                               & 104                     & 5                        & ns   \\ \hline
+Hold-off                               & 504                     & 5                         & ns \\ \hline
+Threshold                               & 8                      & 1                          & mV   \\ \hline
+No flat                               & 512                       & 5                         & ns   \\ \hline
+Rise Time                               & 8                       & 1                          & ns  \\ \hline
+\end{tabular}
+\end{center}
+\caption{Impostazioni del Digitizer.}
+\end{table}
+\newpage
+In laboratorio è stata svolta una prima parte di analisi approssimativa, per stabilire i valori dei parametri per i fit.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=270px]{img/tab25.png}
+\caption{Misure di spettro per il LED a 2.5, in rosso $<\!\!\Delta_{pp}\!\!>$.}
+\label{fig:Sipm25}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=280px]{img/tab33.png}
+\caption{Misure di spettro per il LED a 3.3, in rosso $<\!\!\Delta_{pp}\!\!>$.}
+\label{fig:Sipm33}
+\end{center}
+\end{figure}
+
 \end{document}

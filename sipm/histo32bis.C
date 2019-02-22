@@ -12,7 +12,7 @@
 using namespace std;
 // Corpo del programma. La funzione qui sotto deve avere lo stesso nome del file .C
 Double_t multipeak(Double_t *x,Double_t *par) {
-  unsigned int npeaks = 8;
+  unsigned int npeaks = 9;
   float result = 0.;
   float mean = 0;
   for (unsigned int i = 0; i < npeaks; i++) {
@@ -26,7 +26,7 @@ Double_t fpoisson(Double_t *x,Double_t *par) {
   return par[0]*TMath::Poisson(x[0],par[1]);
 }
 
-void histo32()
+void histo32bis()
 {
 
   // --------------------------- DATI ------------------------------- //
@@ -53,7 +53,7 @@ void histo32()
   double sch[n];
   double scount[n];
   for(int j = 0; j<n;j++){
-    ch[j]-=1457.;
+    ch[j]-=1105.;
     sch[j]=4;
     scount[j]=pow(count[j],0.5)+20;
   }
@@ -82,7 +82,7 @@ void histo32()
   giV->Draw("AP");
 
   cout << "\n\n --- Fit I(V) \n" <<endl;
-  TF1 *funz0 = new TF1("funz0",multipeak,-200,2700,17);
+  TF1 *funz0 = new TF1("funz0",multipeak,-200,3150,19);
   // cambio colore alla linea della funzione in modo da distinguerla dalla polinomiale di ordine 4 quando la andrò a disegnare
   funz0->SetLineStyle(1);
   funz0->SetLineColor(2);
@@ -114,15 +114,15 @@ void histo32()
   /*funz0->SetParLimits(1,5,15);
   funz0->SetParLimits(3,10,20);
   funz0->SetParLimits(5,300,500);*/
-  //funz0->SetParLimits(1,650,850);
-  funz0->SetParLimits(1,1350,1500);
-  funz0->SetParLimits(3,2000,2300);
-  funz0->SetParLimits(5,2500,2700);
-  funz0->SetParLimits(7,2870,3000);
-  funz0->SetParLimits(9,2750,2900);
-  funz0->SetParLimits(11,2550,2700);
-  funz0->SetParLimits(13,2000,2080);
-  funz0->SetParLimits(15,1500,1610);
+  funz0->SetParLimits(1,650,850);
+  funz0->SetParLimits(3,1350,1500);
+  funz0->SetParLimits(5,2000,2300);
+  funz0->SetParLimits(7,2500,2600);
+  funz0->SetParLimits(9,2870,3000);
+  funz0->SetParLimits(11,2750,2900);
+  funz0->SetParLimits(13,2450,2550);
+  funz0->SetParLimits(15,2000,2080);
+  funz0->SetParLimits(17,1500,1610);
   giV->Fit(funz0,"RM+");
   cout << "Chi^2:" << funz0->GetChisquare() << ", number of DoF: " << funz0->GetNDF() << " (Probability: " << funz0->GetProb() << ")." << endl;
   cout << "--------------------------------------------------------------------------------------------------------" << endl;

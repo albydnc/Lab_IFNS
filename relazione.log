@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  19 FEB 2019 22:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  22 FEB 2019 10:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -491,6 +491,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \sf@top=\skip52
 \sf@bottom=\skip53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen137
+\WF@size=\dimen138
+\c@WF@wrappedlines=\count108
+\WF@box=\box26
+\WF@everypar=\toks22
+Package: wrapfig 2003/01/31  v 3.6
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
@@ -556,23 +564,30 @@ Package tocloft Info: The document has section divisions on input line 51.
 \cftsubtabindent=\skip98
 \cftsubtabnumwidth=\skip99
 )
-(./relazione.aux)
+(./relazione.aux
+
+LaTeX Warning: Label `fig:thres_H' multiply defined.
+
+
+LaTeX Warning: Label `fig:Sipm' multiply defined.
+
+)
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Info: Redefining \it@ocap on input line 61.
-LaTeX Info: Redefining \it@ccap on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Info: Redefining \it@ocap on input line 62.
+LaTeX Info: Redefining \it@ccap on input line 62.
 
 
 File italian.ldf warning: 
@@ -580,7 +595,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 61.
+italian.ldf    on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -618,17 +633,17 @@ italian.ldf    on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen137
-\scratchbox=\box26
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen138
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count109
+\scratchdimen=\dimen139
+\scratchbox=\box27
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen140
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -683,13 +698,14 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 62.
+(Font)              <12> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 62.
+(Font)              <8> on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 62.
+(Font)              <6> on input line 63.
 
 [1
 
@@ -697,19 +713,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <img/conn_3.png, id=9, 703.62875pt x 371.3875pt>
 File: img/conn_3.png Graphic file (type png)
 <use img/conn_3.png>
-Package pdftex.def Info: img/conn_3.png  used on input line 72.
+Package pdftex.def Info: img/conn_3.png  used on input line 73.
 (pdftex.def)             Requested size: 401.50146pt x 211.91974pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 77.
+(Font)              <10.95> on input line 78.
 <img/table_H.png, id=11, 462.22687pt x 325.96782pt>
 File: img/table_H.png Graphic file (type png)
 <use img/table_H.png>
-Package pdftex.def Info: img/table_H.png  used on input line 80.
+Package pdftex.def Info: img/table_H.png  used on input line 81.
 (pdftex.def)             Requested size: 351.31378pt x 247.75302pt.
 <img/chart_H.pdf, id=12, 569.12625pt x 410.53375pt>
 File: img/chart_H.pdf Graphic file (type pdf)
 <use img/chart_H.pdf>
-Package pdftex.def Info: img/chart_H.pdf  used on input line 87.
+Package pdftex.def Info: img/chart_H.pdf  used on input line 88.
 (pdftex.def)             Requested size: 401.50146pt x 289.63306pt.
 
 
@@ -729,45 +745,45 @@ Overfull \vbox (2.93036pt too high) has occurred while \output is active []
 <img/thres_H.png, id=68, 469.00218pt x 123.46124pt>
 File: img/thres_H.png Graphic file (type png)
 <use img/thres_H.png>
-Package pdftex.def Info: img/thres_H.png  used on input line 112.
+Package pdftex.def Info: img/thres_H.png  used on input line 113.
 (pdftex.def)             Requested size: 351.31378pt x 92.48077pt.
 <img/table_M.png, id=69, 459.96844pt x 298.86656pt>
 File: img/table_M.png Graphic file (type png)
 <use img/table_M.png>
-Package pdftex.def Info: img/table_M.png  used on input line 121.
+Package pdftex.def Info: img/table_M.png  used on input line 122.
 (pdftex.def)             Requested size: 351.31378pt x 228.281pt.
 <img/chart_M.pdf, id=70, 569.12625pt x 336.25626pt>
 File: img/chart_M.pdf Graphic file (type pdf)
 <use img/chart_M.pdf>
-Package pdftex.def Info: img/chart_M.pdf  used on input line 128.
+Package pdftex.def Info: img/chart_M.pdf  used on input line 129.
 (pdftex.def)             Requested size: 401.50146pt x 237.23001pt.
 <img/thres_M.png, id=71, 468.24937pt x 143.78719pt>
 File: img/thres_M.png Graphic file (type png)
 <use img/thres_M.png>
-Package pdftex.def Info: img/thres_M.png  used on input line 149.
+Package pdftex.def Info: img/thres_M.png  used on input line 150.
 (pdftex.def)             Requested size: 351.31378pt x 107.884pt.
 <img/thres_IN.png, id=72, 469.00218pt x 84.315pt>
 File: img/thres_IN.png Graphic file (type png)
 <use img/thres_IN.png>
-Package pdftex.def Info: img/thres_IN.png  used on input line 158.
+Package pdftex.def Info: img/thres_IN.png  used on input line 159.
 (pdftex.def)             Requested size: 351.31378pt x 63.1576pt.
 <img/table_N.png, id=73, 459.21562pt x 183.68625pt>
 File: img/table_N.png Graphic file (type png)
 <use img/table_N.png>
-Package pdftex.def Info: img/table_N.png  used on input line 166.
+Package pdftex.def Info: img/table_N.png  used on input line 167.
 (pdftex.def)             Requested size: 351.31378pt x 140.53351pt.
 <img/chart_N.pdf, id=74, 569.12625pt x 336.25626pt>
 File: img/chart_N.pdf Graphic file (type pdf)
 <use img/chart_N.pdf>
-Package pdftex.def Info: img/chart_N.pdf  used on input line 173.
+Package pdftex.def Info: img/chart_N.pdf  used on input line 174.
 (pdftex.def)             Requested size: 401.50146pt x 237.23001pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--193
+Underfull \hbox (badness 10000) in paragraph at lines 96--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--193
+Underfull \hbox (badness 10000) in paragraph at lines 96--194
 
  []
 
@@ -784,42 +800,124 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img/conn_4.png, id=176, 703.62875pt x 288.07625pt>
 File: img/conn_4.png Graphic file (type png)
 <use img/conn_4.png>
-Package pdftex.def Info: img/conn_4.png  used on input line 197.
+Package pdftex.def Info: img/conn_4.png  used on input line 198.
 (pdftex.def)             Requested size: 401.50146pt x 164.38098pt.
  [7 <./img/conn_4.png>]
 <img/table_C.pdf, id=183, 381.5856pt x 576.7146pt>
 File: img/table_C.pdf Graphic file (type pdf)
 <use img/table_C.pdf>
-Package pdftex.def Info: img/table_C.pdf  used on input line 206.
+Package pdftex.def Info: img/table_C.pdf  used on input line 207.
 (pdftex.def)             Requested size: 351.31378pt x 530.98866pt.
- [8 <./img/table_C.pdf>] [9]
-(./relazione.aux)
+ [8 <./img/table_C.pdf>]
+<img/chart_C.pdf, id=194, 569.12625pt x 336.25626pt>
+File: img/chart_C.pdf Graphic file (type pdf)
+<use img/chart_C.pdf>
+Package pdftex.def Info: img/chart_C.pdf  used on input line 219.
+(pdftex.def)             Requested size: 321.20117pt x 189.78503pt.
+ [9 <./img/chart_C.pdf, page is rotated 90 degrees>]
+<img/tetto.jpg, id=242, 602.25pt x 445.665pt>
+File: img/tetto.jpg Graphic file (type jpg)
+<use img/tetto.jpg>
+Package pdftex.def Info: img/tetto.jpg  used on input line 281.
+(pdftex.def)             Requested size: 148.42369pt x 109.8315pt.
+<img/CB1.PNG, id=243, 407.27156pt x 122.70844pt>
+File: img/CB1.PNG Graphic file (type png)
+<use img/CB1.PNG>
+Package pdftex.def Info: img/CB1.PNG  used on input line 289.
+(pdftex.def)             Requested size: 281.05103pt x 84.682pt.
+<img/CBdeg.pdf, id=244, 569.12625pt x 336.25626pt>
+File: img/CBdeg.pdf Graphic file (type pdf)
+<use img/CBdeg.pdf>
+Package pdftex.def Info: img/CBdeg.pdf  used on input line 296.
+(pdftex.def)             Requested size: 301.1261pt x 177.9225pt.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 6220) in paragraph at lines 285--302
+\OT1/cmr/m/n/10.95 Impostata la di-stan-za fra i due scin-til-la-to-ri a
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./img/tetto.jpg> <./img/CB1.PNG>]
+<img/CB4.PNG, id=250, 408.77719pt x 124.96687pt>
+File: img/CB4.PNG Graphic file (type png)
+<use img/CB4.PNG>
+Package pdftex.def Info: img/CB4.PNG  used on input line 322.
+(pdftex.def)             Requested size: 281.05103pt x 85.92404pt.
+<img/CBexp.pdf, id=251, 569.12625pt x 336.25626pt>
+File: img/CBexp.pdf Graphic file (type pdf)
+<use img/CBexp.pdf>
+Package pdftex.def Info: img/CBexp.pdf  used on input line 329.
+(pdftex.def)             Requested size: 301.1261pt x 177.9225pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--335
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./img/CBdeg.pdf, page is rotated 90 degrees> <./img/CB4.PNG>]
+<img/table_ACC.png, id=300, 456.20438pt x 91.84312pt>
+File: img/table_ACC.png Graphic file (type png)
+<use img/table_ACC.png>
+Package pdftex.def Info: img/table_ACC.png  used on input line 366.
+(pdftex.def)             Requested size: 401.50146pt x 80.83199pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./img/CBexp.pdf, page is rotated 90 degrees>]
+<img/SIPM01.PNG, id=347, 515.9275pt x 454.69875pt>
+File: img/SIPM01.PNG Graphic file (type png)
+<use img/SIPM01.PNG>
+Package pdftex.def Info: img/SIPM01.PNG  used on input line 382.
+(pdftex.def)             Requested size: 281.05103pt x 247.70529pt.
+ [13 <./img/table_ACC.png> <./img/SIPM01.PNG>]
+<img/tabnoise.png, id=354, 327.47343pt x 201.00093pt>
+File: img/tabnoise.png Graphic file (type png)
+<use img/tabnoise.png>
+Package pdftex.def Info: img/tabnoise.png  used on input line 391.
+(pdftex.def)             Requested size: 281.05103pt x 172.50778pt.
+ [14 <./img/tabnoise.png>]
+<img/tab25.png, id=359, 423.08063pt x 162.6075pt>
+File: img/tab25.png Graphic file (type png)
+<use img/tab25.png>
+Package pdftex.def Info: img/tab25.png  used on input line 422.
+(pdftex.def)             Requested size: 271.01349pt x 104.1652pt.
+<img/tab33.png, id=360, 422.32782pt x 261.22594pt>
+File: img/tab33.png Graphic file (type png)
+<use img/tab33.png>
+Package pdftex.def Info: img/tab33.png  used on input line 429.
+(pdftex.def)             Requested size: 281.05103pt x 173.84459pt.
+ [15 <./img/tab25.png> <./img/tab33.png>] (./relazione.aux)
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5199 strings out of 492982
- 75588 string characters out of 6134895
- 163269 words of memory out of 5000000
- 8675 multiletter control sequences out of 15000+600000
+ 5325 strings out of 492982
+ 77458 string characters out of 6134895
+ 164698 words of memory out of 5000000
+ 8784 multiletter control sequences out of 15000+600000
  9705 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,43p,833b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,43p,833b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb>
-Output written on relazione.pdf (9 pages, 354784 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb>
+Output written on relazione.pdf (15 pages, 524047 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 402 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

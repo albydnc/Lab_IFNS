@@ -33,15 +33,15 @@ void histo()
   // Resistenza della lampadina, misurata in laboratorio con il multimetro
 
   // numero misure prese
-  const int n = 3046;
+  const int n = 904;
   double ch[n];
   double count[n];
   double x = 0.;
   double y = 0.;
   ifstream a;
-  a.open("D8_led25_histo.txt");
+  a.open("D8_led25_reduce.txt");
   int i=0;
-  while(!a.eof()){
+  while(!a.eof()&& i<n){
     a>>ch[i]>>count[i];
     cout << ch[i]<<"\t"<<count[i]<<endl;
     x += count[i]*ch[i];
@@ -50,6 +50,12 @@ void histo()
   }
   cout << "media "<< (x/y)<<endl;
   a.close();
+  double sch[n];
+  double scount[n];
+  for(int j = 0; j<n;j++){
+    sch[j]=2;
+    scount[j]=pow(count[j],0.5)+100;
+  }
   TCanvas *ciV = new TCanvas("cVe","Ve",200,10,600,400);
   // Mi assicuro che la tela sia bianca (0 corrisponde al bianco, per altri colori vedi https://root.cern.ch/doc/master/classTColor.html)
   ciV->SetFillColor(0);
@@ -58,7 +64,7 @@ void histo()
   // Istanzio il grafico. Il costruttore che noi usiamo prende come argomenti:
   // il numero di misure da disegnare, l'array di misure x (=V), l'array di misure y (=i), e gli
   // array delle  rispettive incertezze
-  TGraph *giV = new TGraph(n,ch,count);
+  TGraph *giV = new TGraphErrors(n,ch,count,sch,scount);
   // Nelle due righe successive disegno i punti del grafico con lo stile che più mi piace.
   // Vedi anche https://root.cern.ch/doc/master/classTAttMarker.html
   giV->SetMarkerSize(0.6);
@@ -75,18 +81,29 @@ void histo()
   giV->Draw("AP");
 
   cout << "\n\n --- Fit I(V) \n" <<endl;
-  TF1 *funz0 = new TF1("funz0",multipeak,-200,4000,15);
+  TF1 *funz0 = new TF1("funz0",multipeak,-100,2400,15);
   // cambio colore alla linea della funzione in modo da distinguerla dalla polinomiale di ordine 4 quando la andrò a disegnare
   funz0->SetLineStyle(1);
   funz0->SetLineColor(2);
-  funz0->SetParameter(0,365);
+  funz0->SetParameter(0,370);
   funz0->SetParameter(2,22);
-  funz0->SetParameter(4,27);
-  funz0->SetParameter(6,28);
-  funz0->SetParameter(8,30);
-  funz0->SetParameter(10,33);
-  funz0->SetParameter(12,40);
-  funz0->SetParameter(14,42);
+  funz0->SetParameter(4,30);
+  funz0->SetParameter(6,31);
+  funz0->SetParameter(8,50);
+  funz0->SetParLimits(2,10,30);
+  funz0->SetParLimits(4,20,45);
+  funz0->SetParLimits(6,30,60);
+  funz0->SetParLimits(8,20,50);
+  funz0->SetParLimits(10,30,45);
+  funz0->SetParLimits(12,33,45);
+  funz0->SetParLimits(14,25,47);
+  funz0->SetParLimits(1,6500,7500);
+  funz0->SetParLimits(3,10500,12500);
+  funz0->SetParLimits(5,10000,12000);
+  funz0->SetParLimits(7,7300,8500);
+  funz0->SetParLimits(9,3000,5000);
+  funz0->SetParLimits(11,1000,3000);
+  funz0->SetParLimits(13,300,1300);
   giV->Fit(funz0,"RM+");
   cout << "Chi^2:" << funz0->GetChisquare() << ", number of DoF: " << funz0->GetNDF() << " (Probability: " << funz0->GetProb() << ")." << endl;
   cout << "--------------------------------------------------------------------------------------------------------" << endl;
