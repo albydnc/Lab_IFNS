@@ -54,7 +54,7 @@ void histo()
   double scount[n];
   for(int j = 0; j<n;j++){
     sch[j]=2;
-    scount[j]=pow(count[j],0.5)+100;
+    scount[j]=pow(count[j],0.5)+50;
   }
   TCanvas *ciV = new TCanvas("cVe","Ve",200,10,600,400);
   // Mi assicuro che la tela sia bianca (0 corrisponde al bianco, per altri colori vedi https://root.cern.ch/doc/master/classTColor.html)
@@ -70,11 +70,11 @@ void histo()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("epsM(V)");
+  giV->SetTitle("Spettro LED 2.5");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("V [V]");
+  giV->GetXaxis()->SetTitle("Channel");
   //giV->GetXaxis()->SetAxisLimits(0,3000);
-  giV->GetYaxis()->SetTitle("eps");
+  giV->GetYaxis()->SetTitle("Count");
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
   // "AP" è molto semplice, gli stiamo chiedendo di disegnare gli assi (A) e i punti (P)

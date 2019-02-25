@@ -226,7 +226,7 @@ c_1\left( t \right) =\frac{A}{1+e^{\frac{B-t}{C}}},\;\;\;\;c_2  \left( t \right)
 \begin{tabular}{|c|c|c|l|}
 \hline
 \multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
-A                               & 12.1                       & 0.2                      & $s^{-1}$     \\ \hline
+A                               & 12.1                       & 0.2                      & Hz     \\ \hline
 B                               & 21.1                        & 0.2                           & $\times10^{-9}\;s$    \\ \hline
 C                               & 1.3                          & 0.07                          &  $\times10^{-9}\;s$    \\ \hline
 \end{tabular}
@@ -240,7 +240,7 @@ Il modello teorico risulta compatibile con i dati con un p-value del $13\%$, $\c
 \hline
 \multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
 M                               & -0.005                       & 0.007                 & $\times 10^{-9}\;s^{-2}$     \\ \hline
-Q                               & 12.13                      & 0.08                           & $s^{-1}$    \\ \hline
+Q                               & 12.13                      & 0.08                           & Hz    \\ \hline
 \end{tabular}
 \end{center}
 \caption{Risultati della regressione sul plateau  [-19.00,17.00] ns.}
@@ -251,7 +251,7 @@ Q                               & 12.13                      & 0.08             
 \begin{tabular}{|c|c|c|l|}
 \hline
 \multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
-D                               & 12.2                       & 0.1                       &    $s^{-1}$  \\ \hline
+D                               & 12.2                       & 0.1                       &    Hz \\ \hline
 E                               & -25.1                       & 0.2                           & $\times10^{-9}\;s$    \\ \hline
 F                               & 1.34                          & 0.07                           & $\times10^{-9}\;s$    \\ \hline
 \end{tabular}
@@ -267,7 +267,7 @@ Mantenendo il setup del paragrafo precedente, si è impostato il delay fra i seg
 \begin{tabular}{|l|l|l|l|}
 \hline
 Rate IH                   & Rate NM                & Rate Accidentale & Rate Notturno   \\ \hline
-\multicolumn{1}{|c|}{$\left(82\pm1\right)\; s^{-1}$} & \multicolumn{1}{c|}{$\left(48\pm1\right)\; s^{-1}$}& \multicolumn{1}{|c|}{$\left(159\pm5\right)\times10^{-6}\;s^{-1}$} &\multicolumn{1}{c|}{$\left(821\pm106\right)\times10^{-6}\;s^{-1}$}          \\ \hline
+\multicolumn{1}{|c|}{$\left(82\pm1\right)\; Hz$} & \multicolumn{1}{c|}{$\left(48\pm1\right)\; Hz$}& \multicolumn{1}{|c|}{$\left(159\pm5\right)\times10^{-6}\;Hz$} &\multicolumn{1}{c|}{$\left(821\pm106\right)\times10^{-6}\;Hz$}          \\ \hline
 \end{tabular}
 \end{center}
 \caption{Comparazione Rate Accidentale e Rate Notturno.}
@@ -308,7 +308,7 @@ dove $R_0$ è il rate in posizione verticale e $n$ l'esponente del coseno.
 \begin{tabular}{|c|c|c|l|}
 \hline
 \multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
-$R_0$                               & 0.51                       & 0.03                       &    $s^{-1}$  \\ \hline
+$R_0$                               & 0.51                       & 0.03                       &    Hz \\ \hline
 $n$                               & 2.3                       & 0.4                           &    \\ \hline
 \end{tabular}
 \end{center}
@@ -341,7 +341,7 @@ dove $R_0$ è il rate ideale e $\alpha$ è il coefficiente di attenuazione.
 \begin{tabular}{|c|c|c|l|}
 \hline
 \multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore} & U.M. \\ \hline
-$R_0$                               & 1.48                       & 0.06                       &    $s^{-1}$  \\ \hline
+$R_0$                               & 1.48                       & 0.06                       &    Hz  \\ \hline
 $\alpha$                               & 0.19                       & 0.02                          & $m^{-1}$   \\ \hline
 \end{tabular}
 \end{center}
@@ -353,7 +353,7 @@ $\alpha$                               & 0.19                       & 0.02      
 \begin{tabular}{|c|c|c|l|}
 \hline
 \multicolumn{1}{|l|}{$\eta\;\left(R_{-2}/R_{6}\right)$} & \multicolumn{1}{l|}{$\eta\;\left(e^{-\alpha x_{TOT}}\right)$}  & p-value \\ \hline
-$$ $\left(0.53\pm0.04\right)$                               & $\left(0.495\pm0.002\right)$                      &19\%   \\ \hline
+$$ $\left(0.53\pm0.04\right)$                               & $\left(0.495\pm0.002\right)$                      &38\%   \\ \hline
 \end{tabular}
 \end{center}
 \caption{Confronto dei fattori di attenuazione}
@@ -368,24 +368,38 @@ Per valutare l'accettanza della postazione fissa, si sono utilizzati i dati pres
 \label{fig:ACC}
 \end{center}
 \end{figure}
-\\L'accettanza per la postazione fissa teorica è $G=\left(0.40168\pm0.00007\right)$.
+\\L'accettanza per la postazione fissa teorica è $G=\left(0.75410\pm0.00002\right)$.
 \subsection*{Risultati finali}
-I risultati dei calcoli e delle misure fatte in precedenza sono utilizzati per determinare il valore atteso di rate e confrontarlo con quello misurato sperimentalmente.
+I risultati dei calcoli e delle misure fatte in precedenza sono stati utilizzati per determinare il valore atteso di rate e confrontarlo con quello misurato sperimentalmente. Assunto un flusso di raggi cosmici sulla superficie terrestre al livello del mare $\Phi_{teor}=180\;Hz\cdot m^{-2}$, si è calcolato il rate considerando la superficie della postazione fissa ($S=0.2 m^2$) e assumendo $\eta=\left(0.495\pm0.002\right)$ dal fit esponenziale. Per il calcolo del rate sperimentale, si è trascurato il rate di fondo, in quanto di diversi ordini di grandezza più piccolo del rate misurato; per il rate misurato si è utilizzato il valore estratto dal fit lineare del plateau ($12.13\pm 0.08$). L'efficienza della postazione è stata determinata come 
+\begin{equation}
+\epsilon = \left(\epsilon_I + \epsilon_H\right)\cdot\left(\epsilon_N+\epsilon_M\right)/4 = \left(0.9\pm0.2\right)
+\end{equation}
+per $G$ il valore statistico determinato con la simulazione $G=\left(0.75410\pm0.00002\right)$.
 \begin{equation}
 R_{att}= \eta\,\cdot\,R_{slm}\;,\;\;\;\;\;\;R_{sper}=\frac{R_{mis}-R_{acc}}{\epsilon \,\cdot\,G}
 \end{equation}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{$R_{att}\;\left[Hz\right]$} & \multicolumn{1}{l|}{$R_{sper}\;\left[Hz\right]$} & \multicolumn{1}{l|}{Z} & p-value \\ \hline
+$\left(18\pm2\right)$ & $\left(17.9\pm0.2\right)$& 0.06& 96\%\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\\Il rate atteso di raggi cosmici risulta compatibile con quello calcolato dalle misure fatte nei paragrafi precedenti, con un p-value del 96\%.
+\newpage
 \section{Testbench SiPM} 
 \subsection{Misura del rumore di fondo}
 Utilizzando il kit SiPM della CAEN è stato osservato tramite oscilloscopio il segnale analogico senza sorgente luminosa per individuare la soglia corrispondente al primo, secondo e terzo fotoelettrone. Per tutta l'esperienza la temperatura del SiPM è rimasta stabile a $25^{\circ}$C.
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=280px]{img/SIPM01.PNG}
+\includegraphics[width=230px]{img/SIPM01.PNG}
 \caption{Segnale in uscita dal SiPM, si possono vedere chiaramente i livelli relativi ai fotoelettroni emessi.}
 \label{fig:Sipm}
 \end{center}
 \end{figure}
-\newpage
-Si è verificato che, al variare del Gain, il grafico a scalini riportasse frequenze compatibili per i primi tre livelli energetici. Si sono assunti come errori la cifra meno significativa; per le misure di frequenza, sopra i 10 kHz si è assunto un errore dell'1\%, sopra 1 kHz 5\%, 10\% altrimenti.
+\\Si è verificato che, al variare del Gain, il grafico a scalini riportasse frequenze compatibili per i primi tre livelli energetici. Si sono assunti come errori la cifra meno significativa; per le misure di frequenza, sopra i 10 kHz si è assunto un errore dell'1\%, sopra 1 kHz 5\%, 10\% altrimenti.
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=280px]{img/tabnoise.png}
@@ -415,7 +429,7 @@ Rise Time                               & 8                       & 1           
 \end{center}
 \caption{Impostazioni del Digitizer.}
 \end{table}
-\newpage
+\\
 In laboratorio è stata svolta una prima parte di analisi approssimativa, per stabilire i valori dei parametri per i fit.
 \begin{figure}[h!]
 \begin{center}
@@ -426,10 +440,55 @@ In laboratorio è stata svolta una prima parte di analisi approssimativa, per st
 \end{figure}
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=280px]{img/tab33.png}
+\includegraphics[width=270px]{img/tab33.png}
 \caption{Misure di spettro per il LED a 3.3, in rosso $<\!\!\Delta_{pp}\!\!>$.}
 \label{fig:Sipm33}
 \end{center}
 \end{figure}
+\\Utilizzando il fit multipicco i risultati sono stati deludenti: a 2.5, il gain è troppo basso e le curve risultano tagliate verso lo zero, delineando solamente le punte del picco, mentre a 3.3 il setup si ritrova in una situazione limite, in quanto il segnale presenta un forte rumore di fondo. Si è provato successivamente il fit di una curva gaussiana per singoli picchi, ma anche questi hanno riportato risultati pessimi con p-value di zero.
+\begin{figure}[!h]
+\centering
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/multi25.pdf} }}%
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/multi33.pdf} }}%
+\caption{Fit multipicco falliti sugli spettri emessi.}
+\end{figure}
+\\ Si è quindi optato per cercare manualmente le coordinate dei centri e i FWHM di ogni picco per poi proced i centriere con il fit di una distribuzione di Poisson sull'integrale dei picchi, calcolato come $N_i\cdot\sigma_i \sqrt{2\pi}$. 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=270px]{img/tabp25.PNG}
+\caption{Determinazione manuale dei valori delle gaussiane sui picchi per lo spettro a 2.5.}
+\label{fig:tabpicchi25}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\vspace{-26pt}
+\includegraphics[width=270px]{img/tabp25.PNG}
+\caption{Determinazione manuale dei valori delle gaussiane sui picchi per lo spettro a 3.3.}
+\label{fig:tabpicchi25}
+\end{center}
+\end{figure}
+\newpage
+\begin{figure}[!h]
+\centering
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/pois25.pdf} }}%
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/pois33.pdf} }}%
+\caption{Fit della distribuzione di Poisson sugli spettri emessi.}
+\end{figure}
+Le distribuzioni di Poisson hanno risultati vicini alle previsioni, tenendo conto però che gli errori sui dati sono piuttosto elevati dato il metodo molto approssimato. Per il led a 2.5 il numero medio di fotoelettroni emesso è di $\mu_{2.5}=\left(2.4\pm0.2\right)$, per il led a 3.3 il numero medio di fotoelettroni è di $\mu_{3.3}=\left(8.8\pm0.2\right)$.
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore}  \\ \hline\hline
+$M_{2.5}$                               & $3.1\times10^{6} $                     & $0.3\times10^{6}  $                          \\ \hline
+$\mu_{2.5}$                               & 2.4                       & 0.2                             \\ \hline \hline
+$M_{3.3}$                               & $2.8\times10^{6} $                   & $0.1\times10^{6} $                        \\ \hline
+$\mu_{3.3}$                               & 8.8                      & 0.2                             \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati dei fit.}
+\end{table}
+\\Per il LED 2.5, il fit riporta un $\chi^2$ di 0.46 con p-value 100\%, mentre per il LED 3.3 il fit riporta un $\chi^2$ di 2.27 con p-value 99\%.
 
 \end{document}

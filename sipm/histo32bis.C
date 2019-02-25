@@ -17,7 +17,7 @@ Double_t multipeak(Double_t *x,Double_t *par) {
   float mean = 0;
   for (unsigned int i = 0; i < npeaks; i++) {
     mean = par[0]*i;
-    result += par[2*i+1]*TMath::Gaus(x[0],mean,par[2*i+2],false);
+    result += par[2*i+1]*TMath::Gaus(x[0]-1105.,mean,par[2*i+2],false);
   }
   return result;
 }
@@ -53,7 +53,7 @@ void histo32bis()
   double sch[n];
   double scount[n];
   for(int j = 0; j<n;j++){
-    ch[j]-=1105.;
+    //ch[j]-=1105.;
     sch[j]=4;
     scount[j]=pow(count[j],0.5)+20;
   }
@@ -71,11 +71,11 @@ void histo32bis()
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("epsM(V)");
+  giV->SetTitle("Spettro LED 3.3");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("V [V]");
+  giV->GetXaxis()->SetTitle("Channel");
   //giV->GetXaxis()->SetAxisLimits(0,3000);
-  giV->GetYaxis()->SetTitle("eps");
+  giV->GetYaxis()->SetTitle("Count");
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
   // "AP" è molto semplice, gli stiamo chiedendo di disegnare gli assi (A) e i punti (P)

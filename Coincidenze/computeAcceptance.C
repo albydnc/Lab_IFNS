@@ -14,8 +14,8 @@
 double pi = 3.141592;
 
 void computeAcceptance(unsigned int events = 50000000,
-		       double length = 14.5,     // in cm
-		       double width = 14.5,      // in cm
+		       double length = 100,     // in cm
+		       double width = 20,      // in cm
 		       double gapWidth = 0.,     // in cm (if the scintillators are in two pieces)
 		       double zSpacing = 7,   // in cm
 		       double tiltAngle = 0.)    // in degrees
