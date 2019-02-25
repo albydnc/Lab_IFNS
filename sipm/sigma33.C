@@ -44,10 +44,10 @@ sn[j]=0.25/n[j];
   giV->SetMarkerSize(0.6);
   giV->SetMarkerStyle(21);
   // Facile, titolo del grafico
-  giV->SetTitle("i(V)");
+  giV->SetTitle("Deviazione standard LED 3.3");
   // Titoli degli assi
-  giV->GetXaxis()->SetTitle("V [V]");
-  giV->GetYaxis()->SetTitle("i [A]");
+  giV->GetXaxis()->SetTitle("#sqrt{N}");
+  giV->GetYaxis()->SetTitle("#sigma");
   // Do istruzioni al grafico di disegnarsi sul canvas che ho selezionato preventivamente con cd()
   // Esistono diverse opzioni di disegno, vedi anche https://root.cern.ch/doc/master/classTGraphPainter.html
   // "AP" è molto semplice, gli stiamo chiedendo di disegnare gli assi (A) e i punti (P)
@@ -57,7 +57,7 @@ sn[j]=0.25/n[j];
   TF1 *funz0 = new TF1("funz0","[0]+[1]*x",0,8);
   // cambio colore alla linea della funzione in modo da distinguerla dalla polinomiale di ordine 4 quando la andrò a disegnare
   funz0->SetLineStyle(1); // Blu
-  funz0->SetLineColor(14);
+  funz0->SetLineColor(2);
   // Istruzione per fare il fit ai dati usando la funzione funz1 sopra definita
   // + significa che voglio aggiungere la funzione funz1 alla lista delle funzioni già disegnate sul canvas
   // R significa che voglio fare il fit solo in un determinato range, definito quando ho creato funz1. Quindi in questo caso (0-130) Ohm

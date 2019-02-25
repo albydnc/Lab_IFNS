@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  25 FEB 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  25 FEB 2019 22:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -396,6 +396,164 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count96
+\float@exts=\toks18
+\float@box=\box26
+\@float@everytoks=\toks19
+\@floatcapt=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.sty
+Package: mathabx 2003/07/29 v0.0 Non-standard LaTeX package mathabx
+\symmatha=\mathgroup4
+\symmathb=\mathgroup5
+\symmathx=\mathgroup6
+
+(/usr/share/texlive/texmf-dist/tex/generic/mathabx/mathabx.dcl
+LaTeX Font Info:    Redeclaring math symbol \cdotp on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \times on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \div on input line 34.
+LaTeX Font Info:    Redeclaring math symbol \cdot on input line 35.
+LaTeX Font Info:    Redeclaring math symbol \circ on input line 36.
+LaTeX Font Info:    Redeclaring math symbol \ast on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \pm on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \mp on input line 42.
+LaTeX Font Info:    Redeclaring math symbol \diamond on input line 45.
+LaTeX Font Info:    Redeclaring math symbol \bullet on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \star on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \amalg on input line 51.
+LaTeX Font Info:    Redeclaring math symbol \equiv on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \sim on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \approx on input line 85.
+LaTeX Font Info:    Redeclaring math symbol \simeq on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \asymp on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \neg on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \ll on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \gg on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \vdash on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \dashv on input line 140.
+LaTeX Font Info:    Redeclaring math symbol \flat on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \natural on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \sharp on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \infty on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \propto on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \dagger on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \ddagger on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \smile on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \frown on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \setminus on input line 218.
+LaTeX Font Info:    Redeclaring math symbol \mid on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \forall on input line 279.
+LaTeX Font Info:    Redeclaring math symbol \partial on input line 281.
+LaTeX Font Info:    Redeclaring math symbol \exists on input line 284.
+LaTeX Font Info:    Redeclaring math symbol \emptyset on input line 288.
+LaTeX Font Info:    Redeclaring math symbol \top on input line 290.
+LaTeX Font Info:    Redeclaring math symbol \bot on input line 291.
+LaTeX Font Info:    Redeclaring math symbol \perp on input line 292.
+LaTeX Font Info:    Redeclaring math symbol \in on input line 299.
+LaTeX Font Info:    Redeclaring math symbol \owns on input line 300.
+LaTeX Font Info:    Redeclaring math symbol \cap on input line 312.
+LaTeX Font Info:    Redeclaring math symbol \cup on input line 313.
+LaTeX Font Info:    Redeclaring math symbol \uplus on input line 314.
+LaTeX Font Info:    Redeclaring math symbol \sqcap on input line 315.
+LaTeX Font Info:    Redeclaring math symbol \sqcup on input line 316.
+LaTeX Font Info:    Redeclaring math symbol \wedge on input line 318.
+LaTeX Font Info:    Redeclaring math symbol \vee on input line 320.
+LaTeX Font Info:    Redeclaring math symbol \subset on input line 344.
+LaTeX Font Info:    Redeclaring math symbol \supset on input line 345.
+LaTeX Font Info:    Redeclaring math symbol \subseteq on input line 348.
+LaTeX Font Info:    Redeclaring math symbol \supseteq on input line 349.
+LaTeX Font Info:    Redeclaring math symbol \sqsubseteq on input line 380.
+LaTeX Font Info:    Redeclaring math symbol \sqsupseteq on input line 381.
+LaTeX Font Info:    Redeclaring math symbol \triangleleft on input line 407.
+LaTeX Font Info:    Redeclaring math symbol \triangleright on input line 409.
+LaTeX Font Info:    Redeclaring math symbol \leq on input line 439.
+LaTeX Font Info:    Redeclaring math symbol \geq on input line 441.
+LaTeX Font Info:    Redeclaring math symbol \prec on input line 498.
+LaTeX Font Info:    Redeclaring math symbol \succ on input line 499.
+LaTeX Font Info:    Redeclaring math symbol \preceq on input line 506.
+LaTeX Font Info:    Redeclaring math symbol \succeq on input line 507.
+LaTeX Font Info:    Redeclaring math symbol \leftarrow on input line 540.
+LaTeX Font Info:    Redeclaring math symbol \rightarrow on input line 542.
+LaTeX Font Info:    Redeclaring math symbol \nwarrow on input line 546.
+LaTeX Font Info:    Redeclaring math symbol \nearrow on input line 547.
+LaTeX Font Info:    Redeclaring math symbol \swarrow on input line 548.
+LaTeX Font Info:    Redeclaring math symbol \searrow on input line 549.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrow on input line 550.
+LaTeX Font Info:    Redeclaring math symbol \mapstochar on input line 557.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoonup on input line 560.
+LaTeX Font Info:    Redeclaring math symbol \rightharpoonup on input line 561.
+LaTeX Font Info:    Redeclaring math symbol \leftharpoondown on input line 562.
+
+LaTeX Font Info:    Redeclaring math symbol \rightharpoondown on input line 563
+.
+LaTeX Font Info:    Redeclaring math symbol \Leftarrow on input line 575.
+LaTeX Font Info:    Redeclaring math symbol \Rightarrow on input line 576.
+LaTeX Font Info:    Redeclaring math symbol \Leftrightarrow on input line 579.
+LaTeX Font Info:    Redeclaring math symbol \rhook on input line 612.
+LaTeX Font Info:    Redeclaring math symbol \lhook on input line 613.
+LaTeX Font Info:    Redeclaring math symbol \oplus on input line 658.
+LaTeX Font Info:    Redeclaring math symbol \ominus on input line 659.
+LaTeX Font Info:    Redeclaring math symbol \otimes on input line 661.
+LaTeX Font Info:    Redeclaring math symbol \odot on input line 663.
+LaTeX Font Info:    Redeclaring math symbol \oslash on input line 675.
+\mayacnter=\count97
+\mayacnta=\count98
+\mayacntb=\count99
+\mayacntc=\count100
+\mayawidth=\dimen112
+LaTeX Font Info:    Redeclaring math symbol \intop on input line 753.
+LaTeX Font Info:    Redeclaring math symbol \ointop on input line 760.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 842.
+LaTeX Info: Redefining \{ on input line 846.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 848.
+LaTeX Info: Redefining \} on input line 852.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 858.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 859.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 863.
+LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 865.
+LaTeX Font Info:    Redeclaring math delimiter \uparrow on input line 868.
+LaTeX Font Info:    Redeclaring math delimiter \downarrow on input line 869.
+LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 870.
+LaTeX Font Info:    Redeclaring math delimiter \Uparrow on input line 871.
+LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 872.
+LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 873.
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 880.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 881.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 882.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 883.
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 884.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 885.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 903.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 905.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 907.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 909.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 944.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 946.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/adforn/adforn.sty
+Package: adforn 2010/07/25 v1.0 adforn CFR
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+LaTeX Font Info:    Try loading font information for U+OrnementsADF on input li
+ne 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/adforn/uornementsadf.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -413,49 +571,58 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count101
+\rotFPtop=\skip43
+\rotFPbot=\skip44
+\rot@float@box=\box28
+\rot@mess@toks=\toks20
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen114
-\lightrulewidth=\dimen115
-\cmidrulewidth=\dimen116
-\belowrulesep=\dimen117
-\belowbottomsep=\dimen118
-\aboverulesep=\dimen119
-\abovetopsep=\dimen120
-\cmidrulesep=\dimen121
-\cmidrulekern=\dimen122
-\defaultaddspace=\dimen123
-\@cmidla=\count96
-\@cmidlb=\count97
-\@aboverulesep=\dimen124
-\@belowrulesep=\dimen125
-\@thisruleclass=\count98
-\@lastruleclass=\count99
-\@thisrulewidth=\dimen126
+\heavyrulewidth=\dimen115
+\lightrulewidth=\dimen116
+\cmidrulewidth=\dimen117
+\belowrulesep=\dimen118
+\belowbottomsep=\dimen119
+\aboverulesep=\dimen120
+\abovetopsep=\dimen121
+\cmidrulesep=\dimen122
+\cmidrulekern=\dimen123
+\defaultaddspace=\dimen124
+\@cmidla=\count102
+\@cmidlb=\count103
+\@aboverulesep=\dimen125
+\@belowrulesep=\dimen126
+\@thisruleclass=\count104
+\@lastruleclass=\count105
+\@thisrulewidth=\dimen127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen127
-\extrarowheight=\dimen128
-\NC@list=\toks18
-\extratabsurround=\skip43
-\backup@length=\skip44
+\col@sep=\dimen128
+\extrarowheight=\dimen129
+\NC@list=\toks21
+\extratabsurround=\skip45
+\backup@length=\skip46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2017/01/22 v2.7 Extended list environments
-\pltopsep=\skip45
-\plpartopsep=\skip46
-\plitemsep=\skip47
-\plparsep=\skip48
-\pl@lab=\toks19
+\pltopsep=\skip47
+\plpartopsep=\skip48
+\plitemsep=\skip49
+\plparsep=\skip50
+\pl@lab=\toks22
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks20
-\verbatim@line=\toks21
+\every@verbatim=\toks23
+\verbatim@line=\toks24
 \verbatim@in@stream=\read1
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
@@ -467,50 +634,52 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen129
-\captionmargin@=\dimen130
-\captionwidth=\dimen131
-\caption@tempdima=\dimen132
-\caption@indent=\dimen133
-\caption@parindent=\dimen134
-\caption@hangindent=\dimen135
+\captionmargin=\dimen130
+\captionmargin@=\dimen131
+\captionwidth=\dimen132
+\caption@tempdima=\dimen133
+\caption@indent=\dimen134
+\caption@parindent=\dimen135
+\caption@hangindent=\dimen136
 )
-\c@ContinuedFloat=\count100
+\c@ContinuedFloat=\count106
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
 )
-\c@KVtest=\count101
-\sf@farskip=\skip49
-\sf@captopadj=\dimen136
-\sf@capskip=\skip50
-\sf@nearskip=\skip51
-\c@subfigure=\count102
-\c@subfigure@save=\count103
-\c@lofdepth=\count104
-\c@subtable=\count105
-\c@subtable@save=\count106
-\c@lotdepth=\count107
-\sf@top=\skip52
-\sf@bottom=\skip53
+\c@KVtest=\count107
+\sf@farskip=\skip51
+\sf@captopadj=\dimen137
+\sf@capskip=\skip52
+\sf@nearskip=\skip53
+\c@subfigure=\count108
+\c@subfigure@save=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@subtable@save=\count112
+\c@lotdepth=\count113
+\sf@top=\skip54
+\sf@bottom=\skip55
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen137
-\WF@size=\dimen138
-\c@WF@wrappedlines=\count108
-\WF@box=\box26
-\WF@everypar=\toks22
+\wrapoverhang=\dimen138
+\WF@size=\dimen139
+\c@WF@wrappedlines=\count114
+\WF@box=\box29
+\WF@everypar=\toks25
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip54
-\f@nch@O@elh=\skip55
-\f@nch@O@erh=\skip56
-\f@nch@O@olh=\skip57
-\f@nch@O@orh=\skip58
-\f@nch@O@elf=\skip59
-\f@nch@O@erf=\skip60
-\f@nch@O@olf=\skip61
-\f@nch@O@orf=\skip62
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
 )
 (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -526,43 +695,43 @@ Package tocbibind Note: Using section or other style headings.
 ) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip63
-\cftbeforetoctitleskip=\skip64
-\cftaftertoctitleskip=\skip65
-\cftbeforepartskip=\skip66
-\cftpartnumwidth=\skip67
-\cftpartindent=\skip68
-\cftbeforesecskip=\skip69
-\cftsecindent=\skip70
-\cftsecnumwidth=\skip71
-\cftbeforesubsecskip=\skip72
-\cftsubsecindent=\skip73
-\cftsubsecnumwidth=\skip74
-\cftbeforesubsubsecskip=\skip75
-\cftsubsubsecindent=\skip76
-\cftsubsubsecnumwidth=\skip77
-\cftbeforeparaskip=\skip78
-\cftparaindent=\skip79
-\cftparanumwidth=\skip80
-\cftbeforesubparaskip=\skip81
-\cftsubparaindent=\skip82
-\cftsubparanumwidth=\skip83
-\cftbeforeloftitleskip=\skip84
-\cftafterloftitleskip=\skip85
-\cftbeforefigskip=\skip86
-\cftfigindent=\skip87
-\cftfignumwidth=\skip88
-\cftbeforelottitleskip=\skip89
-\cftafterlottitleskip=\skip90
-\cftbeforetabskip=\skip91
-\cfttabindent=\skip92
-\cfttabnumwidth=\skip93
-\cftbeforesubfigskip=\skip94
-\cftsubfigindent=\skip95
-\cftsubfignumwidth=\skip96
-\cftbeforesubtabskip=\skip97
-\cftsubtabindent=\skip98
-\cftsubtabnumwidth=\skip99
+\cftparskip=\skip65
+\cftbeforetoctitleskip=\skip66
+\cftaftertoctitleskip=\skip67
+\cftbeforepartskip=\skip68
+\cftpartnumwidth=\skip69
+\cftpartindent=\skip70
+\cftbeforesecskip=\skip71
+\cftsecindent=\skip72
+\cftsecnumwidth=\skip73
+\cftbeforesubsecskip=\skip74
+\cftsubsecindent=\skip75
+\cftsubsecnumwidth=\skip76
+\cftbeforesubsubsecskip=\skip77
+\cftsubsubsecindent=\skip78
+\cftsubsubsecnumwidth=\skip79
+\cftbeforeparaskip=\skip80
+\cftparaindent=\skip81
+\cftparanumwidth=\skip82
+\cftbeforesubparaskip=\skip83
+\cftsubparaindent=\skip84
+\cftsubparanumwidth=\skip85
+\cftbeforeloftitleskip=\skip86
+\cftafterloftitleskip=\skip87
+\cftbeforefigskip=\skip88
+\cftfigindent=\skip89
+\cftfignumwidth=\skip90
+\cftbeforelottitleskip=\skip91
+\cftafterlottitleskip=\skip92
+\cftbeforetabskip=\skip93
+\cfttabindent=\skip94
+\cfttabnumwidth=\skip95
+\cftbeforesubfigskip=\skip96
+\cftsubfigindent=\skip97
+\cftsubfignumwidth=\skip98
+\cftbeforesubtabskip=\skip99
+\cftsubtabindent=\skip100
+\cftsubtabnumwidth=\skip101
 )
 (./relazione.aux
 
@@ -577,20 +746,20 @@ LaTeX Warning: Label `fig:tabpicchi25' multiply defined.
 )
 \openout1 = `relazione.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Info: Redefining \it@ocap on input line 62.
-LaTeX Info: Redefining \it@ccap on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Info: Redefining \it@ocap on input line 65.
+LaTeX Info: Redefining \it@ccap on input line 65.
 
 
 File italian.ldf warning: 
@@ -598,7 +767,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 62.
+italian.ldf    on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -636,17 +805,17 @@ italian.ldf    on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen139
-\scratchbox=\box27
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen140
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count115
+\scratchdimen=\dimen140
+\scratchbox=\box30
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen141
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks27
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -704,11 +873,11 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 63.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 63.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 63.
+(Font)              <6> on input line 66.
 
 [1
 
@@ -716,19 +885,19 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <img/conn_3.png, id=9, 703.62875pt x 371.3875pt>
 File: img/conn_3.png Graphic file (type png)
 <use img/conn_3.png>
-Package pdftex.def Info: img/conn_3.png  used on input line 73.
+Package pdftex.def Info: img/conn_3.png  used on input line 76.
 (pdftex.def)             Requested size: 401.50146pt x 211.91974pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 78.
+(Font)              <10.95> on input line 81.
 <img/table_H.png, id=11, 462.22687pt x 325.96782pt>
 File: img/table_H.png Graphic file (type png)
 <use img/table_H.png>
-Package pdftex.def Info: img/table_H.png  used on input line 81.
+Package pdftex.def Info: img/table_H.png  used on input line 84.
 (pdftex.def)             Requested size: 351.31378pt x 247.75302pt.
 <img/chart_H.pdf, id=12, 569.12625pt x 410.53375pt>
 File: img/chart_H.pdf Graphic file (type pdf)
 <use img/chart_H.pdf>
-Package pdftex.def Info: img/chart_H.pdf  used on input line 88.
+Package pdftex.def Info: img/chart_H.pdf  used on input line 91.
 (pdftex.def)             Requested size: 401.50146pt x 289.63306pt.
 
 
@@ -741,52 +910,52 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./img/conn_3.png>]
-Overfull \vbox (2.93036pt too high) has occurred while \output is active []
+Overfull \vbox (2.91173pt too high) has occurred while \output is active []
 
 
 [3 <./img/table_H.png> <./img/chart_H.pdf, page is rotated 90 degrees>]
-<img/thres_H.png, id=68, 469.00218pt x 123.46124pt>
+<img/thres_H.png, id=69, 469.00218pt x 123.46124pt>
 File: img/thres_H.png Graphic file (type png)
 <use img/thres_H.png>
-Package pdftex.def Info: img/thres_H.png  used on input line 113.
+Package pdftex.def Info: img/thres_H.png  used on input line 116.
 (pdftex.def)             Requested size: 351.31378pt x 92.48077pt.
-<img/table_M.png, id=69, 459.96844pt x 298.86656pt>
+<img/table_M.png, id=70, 459.96844pt x 298.86656pt>
 File: img/table_M.png Graphic file (type png)
 <use img/table_M.png>
-Package pdftex.def Info: img/table_M.png  used on input line 122.
+Package pdftex.def Info: img/table_M.png  used on input line 125.
 (pdftex.def)             Requested size: 351.31378pt x 228.281pt.
-<img/chart_M.pdf, id=70, 569.12625pt x 336.25626pt>
+<img/chart_M.pdf, id=71, 569.12625pt x 336.25626pt>
 File: img/chart_M.pdf Graphic file (type pdf)
 <use img/chart_M.pdf>
-Package pdftex.def Info: img/chart_M.pdf  used on input line 129.
+Package pdftex.def Info: img/chart_M.pdf  used on input line 132.
 (pdftex.def)             Requested size: 401.50146pt x 237.23001pt.
-<img/thres_M.png, id=71, 468.24937pt x 143.78719pt>
+<img/thres_M.png, id=72, 468.24937pt x 143.78719pt>
 File: img/thres_M.png Graphic file (type png)
 <use img/thres_M.png>
-Package pdftex.def Info: img/thres_M.png  used on input line 150.
+Package pdftex.def Info: img/thres_M.png  used on input line 153.
 (pdftex.def)             Requested size: 351.31378pt x 107.884pt.
-<img/thres_IN.png, id=72, 469.00218pt x 84.315pt>
+<img/thres_IN.png, id=73, 469.00218pt x 84.315pt>
 File: img/thres_IN.png Graphic file (type png)
 <use img/thres_IN.png>
-Package pdftex.def Info: img/thres_IN.png  used on input line 159.
+Package pdftex.def Info: img/thres_IN.png  used on input line 162.
 (pdftex.def)             Requested size: 351.31378pt x 63.1576pt.
-<img/table_N.png, id=73, 459.21562pt x 183.68625pt>
+<img/table_N.png, id=74, 459.21562pt x 183.68625pt>
 File: img/table_N.png Graphic file (type png)
 <use img/table_N.png>
-Package pdftex.def Info: img/table_N.png  used on input line 167.
+Package pdftex.def Info: img/table_N.png  used on input line 170.
 (pdftex.def)             Requested size: 351.31378pt x 140.53351pt.
-<img/chart_N.pdf, id=74, 569.12625pt x 336.25626pt>
+<img/chart_N.pdf, id=75, 569.12625pt x 336.25626pt>
 File: img/chart_N.pdf Graphic file (type pdf)
 <use img/chart_N.pdf>
-Package pdftex.def Info: img/chart_N.pdf  used on input line 174.
+Package pdftex.def Info: img/chart_N.pdf  used on input line 177.
 (pdftex.def)             Requested size: 401.50146pt x 237.23001pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--194
+Underfull \hbox (badness 10000) in paragraph at lines 99--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--194
+Underfull \hbox (badness 10000) in paragraph at lines 99--197
 
  []
 
@@ -800,41 +969,41 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./img/thres_IN.png> <./img/table_N.png> <./img/chart_N.pdf, page is rotated
  90 degrees>]
-<img/conn_4.png, id=176, 703.62875pt x 288.07625pt>
+<img/conn_4.png, id=177, 703.62875pt x 288.07625pt>
 File: img/conn_4.png Graphic file (type png)
 <use img/conn_4.png>
-Package pdftex.def Info: img/conn_4.png  used on input line 198.
+Package pdftex.def Info: img/conn_4.png  used on input line 201.
 (pdftex.def)             Requested size: 401.50146pt x 164.38098pt.
  [7 <./img/conn_4.png>]
 <img/table_C.pdf, id=183, 381.5856pt x 576.7146pt>
 File: img/table_C.pdf Graphic file (type pdf)
 <use img/table_C.pdf>
-Package pdftex.def Info: img/table_C.pdf  used on input line 207.
+Package pdftex.def Info: img/table_C.pdf  used on input line 210.
 (pdftex.def)             Requested size: 351.31378pt x 530.98866pt.
  [8 <./img/table_C.pdf>]
 <img/chart_C.pdf, id=194, 569.12625pt x 336.25626pt>
 File: img/chart_C.pdf Graphic file (type pdf)
 <use img/chart_C.pdf>
-Package pdftex.def Info: img/chart_C.pdf  used on input line 219.
+Package pdftex.def Info: img/chart_C.pdf  used on input line 222.
 (pdftex.def)             Requested size: 321.20117pt x 189.78503pt.
  [9 <./img/chart_C.pdf, page is rotated 90 degrees>]
 <img/tetto.jpg, id=242, 602.25pt x 445.665pt>
 File: img/tetto.jpg Graphic file (type jpg)
 <use img/tetto.jpg>
-Package pdftex.def Info: img/tetto.jpg  used on input line 281.
+Package pdftex.def Info: img/tetto.jpg  used on input line 284.
 (pdftex.def)             Requested size: 148.42369pt x 109.8315pt.
 <img/CB1.PNG, id=243, 407.27156pt x 122.70844pt>
 File: img/CB1.PNG Graphic file (type png)
 <use img/CB1.PNG>
-Package pdftex.def Info: img/CB1.PNG  used on input line 289.
+Package pdftex.def Info: img/CB1.PNG  used on input line 292.
 (pdftex.def)             Requested size: 281.05103pt x 84.682pt.
 <img/CBdeg.pdf, id=244, 569.12625pt x 336.25626pt>
 File: img/CBdeg.pdf Graphic file (type pdf)
 <use img/CBdeg.pdf>
-Package pdftex.def Info: img/CBdeg.pdf  used on input line 296.
+Package pdftex.def Info: img/CBdeg.pdf  used on input line 299.
 (pdftex.def)             Requested size: 301.1261pt x 177.9225pt.
 
-Underfull \hbox (badness 6220) in paragraph at lines 285--302
+Underfull \hbox (badness 6220) in paragraph at lines 288--305
 \OT1/cmr/m/n/10.95 Impostata la di-stan-za fra i due scin-til-la-to-ri a
  []
 
@@ -845,15 +1014,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img/CB4.PNG, id=250, 408.77719pt x 124.96687pt>
 File: img/CB4.PNG Graphic file (type png)
 <use img/CB4.PNG>
-Package pdftex.def Info: img/CB4.PNG  used on input line 322.
+Package pdftex.def Info: img/CB4.PNG  used on input line 325.
 (pdftex.def)             Requested size: 281.05103pt x 85.92404pt.
 <img/CBexp.pdf, id=251, 569.12625pt x 336.25626pt>
 File: img/CBexp.pdf Graphic file (type pdf)
 <use img/CBexp.pdf>
-Package pdftex.def Info: img/CBexp.pdf  used on input line 329.
+Package pdftex.def Info: img/CBexp.pdf  used on input line 332.
 (pdftex.def)             Requested size: 301.1261pt x 177.9225pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--335
+Underfull \hbox (badness 10000) in paragraph at lines 322--338
 
  []
 
@@ -864,7 +1033,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img/table_ACC.png, id=300, 456.20438pt x 91.84312pt>
 File: img/table_ACC.png Graphic file (type png)
 <use img/table_ACC.png>
-Package pdftex.def Info: img/table_ACC.png  used on input line 366.
+Package pdftex.def Info: img/table_ACC.png  used on input line 369.
 (pdftex.def)             Requested size: 401.50146pt x 80.83199pt.
 
 
@@ -874,94 +1043,117 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <img/SIPM01.PNG, id=352, 515.9275pt x 454.69875pt>
 File: img/SIPM01.PNG Graphic file (type png)
 <use img/SIPM01.PNG>
-Package pdftex.def Info: img/SIPM01.PNG  used on input line 397.
+Package pdftex.def Info: img/SIPM01.PNG  used on input line 400.
 (pdftex.def)             Requested size: 230.86334pt x 203.46082pt.
 <img/tabnoise.png, id=353, 327.47343pt x 201.00093pt>
 File: img/tabnoise.png Graphic file (type png)
 <use img/tabnoise.png>
-Package pdftex.def Info: img/tabnoise.png  used on input line 405.
+Package pdftex.def Info: img/tabnoise.png  used on input line 408.
 (pdftex.def)             Requested size: 281.05103pt x 172.50778pt.
 <img/tab25.png, id=354, 423.08063pt x 162.6075pt>
 File: img/tab25.png Graphic file (type png)
 <use img/tab25.png>
-Package pdftex.def Info: img/tab25.png  used on input line 436.
+Package pdftex.def Info: img/tab25.png  used on input line 439.
 (pdftex.def)             Requested size: 271.01349pt x 104.1652pt.
 <img/tab33.png, id=355, 422.32782pt x 261.22594pt>
 File: img/tab33.png Graphic file (type png)
 <use img/tab33.png>
-Package pdftex.def Info: img/tab33.png  used on input line 443.
+Package pdftex.def Info: img/tab33.png  used on input line 446.
 (pdftex.def)             Requested size: 271.01349pt x 167.63443pt.
 <img/multi25.pdf, id=356, 569.12625pt x 336.25626pt>
 File: img/multi25.pdf Graphic file (type pdf)
 <use img/multi25.pdf>
-Package pdftex.def Info: img/multi25.pdf  used on input line 451.
-(pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
+Package pdftex.def Info: img/multi25.pdf  used on input line 454.
+(pdftex.def)             Requested size: 213.39566pt x 126.08038pt.
 <img/multi33.pdf, id=357, 569.12625pt x 336.25626pt>
 File: img/multi33.pdf Graphic file (type pdf)
 <use img/multi33.pdf>
-Package pdftex.def Info: img/multi33.pdf  used on input line 452.
-(pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
+Package pdftex.def Info: img/multi33.pdf  used on input line 455.
+(pdftex.def)             Requested size: 213.39566pt x 126.08038pt.
 
-Overfull \hbox (21.4119pt too wide) in paragraph at lines 451--453
+Overfull \hbox (10.03098pt too wide) in paragraph at lines 454--456
  [][][] 
  []
 
 <img/tabp25.PNG, id=358, 314.67563pt x 134.00063pt>
 File: img/tabp25.PNG Graphic file (type png)
 <use img/tabp25.PNG>
-Package pdftex.def Info: img/tabp25.PNG  used on input line 458.
-(pdftex.def)             Requested size: 271.01349pt x 115.41411pt.
-File: img/tabp25.PNG Graphic file (type png)
-<use img/tabp25.PNG>
-Package pdftex.def Info: img/tabp25.PNG  used on input line 466.
-(pdftex.def)             Requested size: 271.01349pt x 115.41411pt.
+Package pdftex.def Info: img/tabp25.PNG  used on input line 461.
+(pdftex.def)             Requested size: 260.97595pt x 111.13867pt.
+<img/tabp33.PNG, id=359, 316.18124pt x 192.72pt>
+File: img/tabp33.PNG Graphic file (type png)
+<use img/tabp33.PNG>
+Package pdftex.def Info: img/tabp33.PNG  used on input line 469.
+(pdftex.def)             Requested size: 260.97595pt x 159.08122pt.
 [14 <./img/SIPM01.PNG> <./img/tabnoise.png>] [15 <./img/tab25.png> <./img/tab33
 .png>] [16 <./img/multi25.pdf, page is rotated 90 degrees> <./img/multi33.pdf, 
-page is rotated 90 degrees> <./img/tabp25.PNG>]
-<img/pois25.pdf, id=460, 569.12625pt x 336.25626pt>
+page is rotated 90 degrees> <./img/tabp25.PNG> <./img/tabp33.PNG>]
+<img/pois25.pdf, id=462, 569.12625pt x 336.25626pt>
 File: img/pois25.pdf Graphic file (type pdf)
 <use img/pois25.pdf>
-Package pdftex.def Info: img/pois25.pdf  used on input line 474.
+Package pdftex.def Info: img/pois25.pdf  used on input line 477.
 (pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
-<img/pois33.pdf, id=461, 569.12625pt x 336.25626pt>
+<img/pois33.pdf, id=463, 569.12625pt x 336.25626pt>
 File: img/pois33.pdf Graphic file (type pdf)
 <use img/pois33.pdf>
-Package pdftex.def Info: img/pois33.pdf  used on input line 475.
+Package pdftex.def Info: img/pois33.pdf  used on input line 478.
 (pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
 
-Overfull \hbox (21.4119pt too wide) in paragraph at lines 474--476
+Overfull \hbox (21.4119pt too wide) in paragraph at lines 477--479
  [][][] 
  []
 
+<img/sigma25.pdf, id=464, 569.12625pt x 336.25626pt>
+File: img/sigma25.pdf Graphic file (type pdf)
+<use img/sigma25.pdf>
+Package pdftex.def Info: img/sigma25.pdf  used on input line 499.
+(pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
+<img/sigma33.pdf, id=465, 569.12625pt x 336.25626pt>
+File: img/sigma33.pdf Graphic file (type pdf)
+<use img/sigma33.pdf>
+Package pdftex.def Info: img/sigma33.pdf  used on input line 500.
+(pdftex.def)             Requested size: 219.08612pt x 129.4411pt.
+
+Overfull \hbox (21.4119pt too wide) in paragraph at lines 499--501
+ [][][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [17 <./img/pois25.pdf, page is rotated 90 degrees> <./img/pois33.pdf, page is r
-otated 90 degrees>] (./relazione.aux)
+otated 90 degrees> <./img/sigma25.pdf, page is rotated 90 degrees> <./img/sigma
+33.pdf, page is rotated 90 degrees>] [18] (./relazione.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5355 strings out of 492982
- 78078 string characters out of 6134895
- 164708 words of memory out of 5000000
- 8808 multiletter control sequences out of 15000+600000
- 10004 words of font info for 35 fonts, out of 8000000 for 9000
+ 6213 strings out of 492982
+ 88594 string characters out of 6134895
+ 170873 words of memory out of 5000000
+ 9616 multiletter control sequences out of 15000+600000
+ 15410 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,12n,49p,833b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on relazione.pdf (17 pages, 681462 bytes).
+ 44i,13n,49p,833b,371s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/adforn/OrnementsADF.enc}</usr/
+share/texlive/texmf-dist/fonts/type1/arkandis/adforn/OrnementsADF.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha6.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb>
+Output written on relazione.pdf (18 pages, 732606 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
+ 694 PDF objects out of 1000 (max. 8388607)
+ 306 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

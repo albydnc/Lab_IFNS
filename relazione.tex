@@ -18,7 +18,10 @@
 \geometry{margin=1.2in} % for example, change the margins to 2 inches all round
 % \geometry{landscape} % set up the page for landscape
 %   read geometry.pdf for detailed page layout information
-
+\usepackage{float}
+\usepackage{mathabx}
+\usepackage{adforn}
+\usepackage{rotating}
 \usepackage{graphicx} % support the \includegraphics command and options
 
 % \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
@@ -448,22 +451,22 @@ In laboratorio è stata svolta una prima parte di analisi approssimativa, per st
 \\Utilizzando il fit multipicco i risultati sono stati deludenti: a 2.5, il gain è troppo basso e le curve risultano tagliate verso lo zero, delineando solamente le punte del picco, mentre a 3.3 il setup si ritrova in una situazione limite, in quanto il segnale presenta un forte rumore di fondo. Si è provato successivamente il fit di una curva gaussiana per singoli picchi, ma anche questi hanno riportato risultati pessimi con p-value di zero.
 \begin{figure}[!h]
 \centering
-    \subfloat[]{{\includegraphics[width=7.7cm]{img/multi25.pdf} }}%
-    \subfloat[]{{\includegraphics[width=7.7cm]{img/multi33.pdf} }}%
+    \subfloat[]{{\includegraphics[width=7.5cm]{img/multi25.pdf} }}%
+    \subfloat[]{{\includegraphics[width=7.5cm]{img/multi33.pdf} }}%
 \caption{Fit multipicco falliti sugli spettri emessi.}
 \end{figure}
 \\ Si è quindi optato per cercare manualmente le coordinate dei centri e i FWHM di ogni picco per poi proced i centriere con il fit di una distribuzione di Poisson sull'integrale dei picchi, calcolato come $N_i\cdot\sigma_i \sqrt{2\pi}$. 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=270px]{img/tabp25.PNG}
+\includegraphics[width=260px]{img/tabp25.PNG}
 \caption{Determinazione manuale dei valori delle gaussiane sui picchi per lo spettro a 2.5.}
 \label{fig:tabpicchi25}
 \end{center}
 \end{figure}
 \begin{figure}[h!]
 \begin{center}
-\vspace{-26pt}
-\includegraphics[width=270px]{img/tabp25.PNG}
+\vspace{-41pt}
+\includegraphics[width=260px]{img/tabp33.PNG}
 \caption{Determinazione manuale dei valori delle gaussiane sui picchi per lo spettro a 3.3.}
 \label{fig:tabpicchi25}
 \end{center}
@@ -473,7 +476,7 @@ In laboratorio è stata svolta una prima parte di analisi approssimativa, per st
 \centering
     \subfloat[]{{\includegraphics[width=7.7cm]{img/pois25.pdf} }}%
     \subfloat[]{{\includegraphics[width=7.7cm]{img/pois33.pdf} }}%
-\caption{Fit della distribuzione di Poisson sugli spettri emessi.}
+\caption{Fit della distribuzione di Poisson sugli integrali dei picchi.}
 \end{figure}
 Le distribuzioni di Poisson hanno risultati vicini alle previsioni, tenendo conto però che gli errori sui dati sono piuttosto elevati dato il metodo molto approssimato. Per il led a 2.5 il numero medio di fotoelettroni emesso è di $\mu_{2.5}=\left(2.4\pm0.2\right)$, per il led a 3.3 il numero medio di fotoelettroni è di $\mu_{3.3}=\left(8.8\pm0.2\right)$.
 \begin{table}[!h]
@@ -490,5 +493,38 @@ $\mu_{3.3}$                               & 8.8                      & 0.2      
 \caption{Risultati dei fit.}
 \end{table}
 \\Per il LED 2.5, il fit riporta un $\chi^2$ di 0.46 con p-value 100\%, mentre per il LED 3.3 il fit riporta un $\chi^2$ di 2.27 con p-value 99\%.
-
+Infine si è svolto un fit lineare che sottolineasse la linearità fra la $\sqrt{N}$ e la deviazione standard $\sigma$.
+\begin{figure}[!h]
+\centering
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/sigma25.pdf} }}%
+    \subfloat[]{{\includegraphics[width=7.7cm]{img/sigma33.pdf} }}%
+\caption{Fit lineare sulle deviazioni standard dei picchi.}
+\end{figure}
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{Parametro} & \multicolumn{1}{l|}{Valore} & \multicolumn{1}{l|}{Errore}  \\ \hline\hline
+$m_{2.5}$                               & 18                      &5                  \\ \hline
+$q_{2.5}$                               & -8                     & 10                             \\ \hline \hline
+$m_{3.3}$                               & 19                   & 3                       \\ \hline
+$q_{3.3}$                               & -2                      & 7                            \\ \hline
+\end{tabular}
+\end{center}
+\caption{Risultati dei fit.}
+\end{table}
+\newpage
+Per il LED 2.5, il fit riporta un $\chi^2$ di 0.44 con p-value 99\%, mentre per il LED 3.3 il fit riporta un $\chi^2$ di 2.26 con p-value 89\%.
+\\Come si può notare, gli errori su questi dati sono molto elevati, per cui è facile che una regressione lineare abbia esito positivo, per determinare se fossero effettivamente correlati, si è valutato il coefficiente di Pearson, risultato essere 0.9 per entrambe, indicando quindi che i dati sono linearmente proporzionali, come atteso. \\Chiaramente, anche se non particolarmente significativo viste le incertezze, l'intercetta della regressione è compatibile con l'origine in entrambi i casi.
+\subsection*{Conclusioni}
+L'esperienza di caratterizzazione del SiPM non ha dato i risultati attesi. Le principali difficoltà che si sono riscontrate sono state l'impostazione del setup sperimentale e la presa dati con l'eventuale valutazione in tempo reale. I dati presi, nonostante fossero state seguite le indicazioni di utilizzo, sono risultati essere molto rumorosi, facilmente risolvibile ripetendo la misura integrando su un maggior intervallo di tempo. Inoltre, conoscendo più approfonditamente l'analisi multipicco, si sarebbero potuti impostare parametri in modo da ottimizzare l'analisi a posteriori. Nonostante ciò il metodo approssimato utilizzato ha comunque dato dei risultati accettabili, non molto distanti dalle previsioni; ma comunque con degli errori molto elevati e quindi i risultati sono poco significativi.
+\begin{center}
+\adfopenflourishleft\quad\adfast3\quad\adfopenflourishright
+\end{center}
+\begin{thebibliography}{}
+\bibitem{1} Covarelli R., \emph{Slides sugli esperimenti}, Campusnet, 2019.
+\bibitem{2} Leo W. R., \emph{Techniques for Nuclear and Particle Physics experiments}, Springer-Verlag.
+\bibitem{3} Knoll G. F., \emph{Radiation Detection and Measurement}, Wiley and Sons.
+\bibitem{4} Caccia M. et al., \emph{An educational kit based on a modular Silicon Photomultiplier system}, CAEN ED3127.
+\end{thebibliography}
 \end{document}
